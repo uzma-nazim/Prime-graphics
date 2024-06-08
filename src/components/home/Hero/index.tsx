@@ -136,7 +136,7 @@ function Hero() {
                                                             <ChevronRight size={40} className='text-white' />
                                                         </div>
                                                     </div> */}
-                                                    <div className='w-[80%] flex justify-center items-center'>
+                                                    <div className='w-[90%] flex justify-center items-center'>
                                                         <Swiper
                                                             slidesPerView={1}
                                                             // navigation={{
@@ -149,15 +149,16 @@ function Hero() {
                                                             speed={600}
                                                             spaceBetween={30}
                                                             freeMode={true}
-                                                            modules={[ Autoplay, FreeMode]}
+                                                            modules={[Autoplay, FreeMode]}
                                                             className="mySwiper"
                                                             loop
                                                         >
                                                             {
                                                                 val.subSlider.map((image, sub_i) => {
                                                                     return (
-                                                                        <SwiperSlide key={sub_i} className='flex items-center !my-auto'>
-                                                                            <Image src={image} width={500} height={500} className='w-[100%]' alt='hero' />
+                                                                        <SwiperSlide key={sub_i} className='flex items-center justify-center !my-auto relative py-10'>
+                                                                            <Image src={'/assets/hero-cover.png'} width={500} height={500} className='w-[90%] absolute ' alt='hero' />
+                                                                            <Image src={image} width={500} height={500} className='w-[90%] !mx-auto my-5 relative z-30' alt='hero' />
                                                                         </SwiperSlide>
                                                                     )
                                                                 })

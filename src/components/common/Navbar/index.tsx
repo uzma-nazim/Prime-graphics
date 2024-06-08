@@ -121,13 +121,13 @@ function Navbar() {
                         </Sheet>
 
                         <div className='hidden lg:flex items-center gap-7'>
-                            <ul className="flex gap-7 text-[13px] font-bold">
+                            <ul className="flex gap-8 text-[13px] font-bold">
                                 <Link href={'/'}><li className=''><UnderLine text='HOME' /></li></Link>
                                 <Link href={'/#gallery'}><li> <UnderLine text='GALLERY' /></li></Link>
                                 <li>
                                     <HoverCard openDelay={0} closeDelay={200}>
                                         <HoverCardTrigger className='flex items-center gap-2 cursor-pointer'>
-                                            <div className='w-full h-full group flex items-center gap-2 cursor-pointer'>
+                                            <div className='w-full h-full group flex items-center gap-0 cursor-pointer'>
                                                 <UnderLine text='SERVICES' />
                                                 <ChevronDown size={20} strokeWidth={1} />
                                             </div>
@@ -166,7 +166,7 @@ function Navbar() {
                                 <li>
                                     <HoverCard openDelay={0} closeDelay={200}>
                                         <HoverCardTrigger className='flex items-center gap-2 cursor-pointer'>
-                                            <div className='w-full h-full group flex items-center gap-2 cursor-pointer'>
+                                            <div className='w-full h-full group flex items-center gap-0 cursor-pointer'>
                                                 <UnderLine text='PATCH GALLERY' />
                                                 <ChevronDown size={20} strokeWidth={1} />
                                             </div>
@@ -176,7 +176,7 @@ function Navbar() {
                                             <div className='flex flex-col'>
                                                 <span onClick={() => simple_redirect('/embroidery-patch')} className='cursor-pointer py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Embroidery Patches</span>
                                                 <DropdownMenuSeparator className='my-0' />
-                                                <span onClick={() => simple_redirect('/embroidery-patch/#leather')} className='cursor-pointer py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Vector</span>
+                                                <span onClick={() => simple_redirect('/embroidery-patch/#leather')} className='cursor-pointer py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Leather Patches</span>
                                             </div>
                                         </HoverCardContent>
                                     </HoverCard>
