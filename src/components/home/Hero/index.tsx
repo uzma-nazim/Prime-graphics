@@ -157,7 +157,7 @@ function Hero() {
                                                                 val.subSlider.map((image, sub_i) => {
                                                                     return (
                                                                         <SwiperSlide key={sub_i} className='flex items-center justify-center !my-auto relative py-10'>
-                                                                            <Image src={'/assets/hero-cover.png'} width={500} height={500} className='w-[90%] absolute ' alt='hero' />
+                                                                            <Image src={'/assets/hero-cover.png'} width={500} height={500} className='w-[90%] absolute left-0 top-5' alt='hero' />
                                                                             <Image src={image} width={500} height={500} className='w-[90%] !mx-auto my-5 relative z-30' alt='hero' />
                                                                         </SwiperSlide>
                                                                     )
