@@ -73,7 +73,7 @@ function Hero() {
     return (
         <div className='relative'>
             <div className='absolute top-0 !z-50 w-full'>
-                <Marquee className='bg-[#3A4EFF] text-white py-1'>
+                <Marquee className='bg-black text-white py-1'>
                     <div className='flex items-center gap-2 mx-24'>
                         <Image src={'/assets/gift.png'} className='w-[30px]' width={50} height={50} alt='gift' />
                         We offer a $free trial for your first simple order to showcase our quality and turnaround time.
