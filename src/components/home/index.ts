@@ -1,0 +1,8 @@
+export { default as Hero } from './Hero'
+export { default as About } from './About'
+export { default as Portfolio } from './Portfolio'
+export { default as VectorGallery } from './VectorGallery'
+export { default as EngravingDesigns } from './EngravingDesigns'
+export { default as Features } from './Features'
+export { default as Achievements } from './Achievements'
+export { default as MakePayment } from './MakePayment'
