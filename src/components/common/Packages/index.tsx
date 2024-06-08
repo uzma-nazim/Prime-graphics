@@ -1,5 +1,5 @@
 'use client'
-import { Heading, LayoutWrapper } from '@/components/common';
+import { Heading, LayoutWrapper, OrderNowLink } from '@/components/common';
 import { Check } from 'lucide-react';
 import React from 'react';
 import { motion } from 'framer-motion'
@@ -108,7 +108,9 @@ function Packages() {
                                             }
                                         </ul>
                                         <div className='pt-7 flex justify-center'>
-                                            <button className='py-2 px-4 border-2 border-dark-primary rounded-xl text-sm font-bold text-black hover:text-white bg-transparent hover:bg-dark-primary transition-all'>Order Now</button>
+                                            <OrderNowLink>
+                                                <button className='py-2 px-4 border-2 border-dark-primary rounded-xl text-sm font-bold text-black hover:text-white bg-transparent hover:bg-dark-primary transition-all'>Order Now</button>
+                                            </OrderNowLink>
                                         </div>
                                     </div>
                                 </motion.div>

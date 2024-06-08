@@ -20,10 +20,16 @@ import {
     SheetTrigger,
     SheetClose
 } from "@/components/ui/sheet"
+import {
+    HoverCard,
+    HoverCardContent,
+    HoverCardTrigger,
+} from "@/components/ui/hover-card"
 
 import { AlignJustify, ChevronDown, X } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import OrderNowLink from '../OrderNowLink';
 
 
 const kaushanScript = Kaushan_Script({ subsets: ["latin"], weight: ["400"] });
@@ -78,7 +84,7 @@ function Navbar() {
                                         <span className="sr-only">Close</span>
                                     </div>
                                     <div className='flex flex-col items-center gap-12 mt-10'>
-                                        <ul className="flex flex-col gap-12 items-center text-sm font-[500]">
+                                        <ul className="flex flex-col gap-12 items-center text-sm font-bold">
                                             <li onClick={() => redirect('/')}>HOME</li>
                                             <li onClick={() => redirect('/#gallery')}>GALLERY</li>
                                             <li>
@@ -106,58 +112,96 @@ function Navbar() {
                                             <Link href={'/#contact'}><li>CONTACT US</li></Link>
                                             <Link href={'/#packages'}><li>OUR PACKAGES</li></Link>
                                         </ul>
-                                        <button className='text-sm py-2 px-5 bg-black text-dark-primary font-bold rounded-md'>Get Quote</button>
+                                        <OrderNowLink>
+                                            <button className='text-sm py-2 px-5 bg-black text-dark-primary font-bold rounded-md'>Get Quote</button>
+                                        </OrderNowLink>
                                     </div>
                                 </SheetHeader>
                             </SheetContent>
                         </Sheet>
 
                         <div className='hidden lg:flex items-center gap-7'>
-                            <ul className="flex gap-7 text-[13px] font-semibold">
+                            <ul className="flex gap-7 text-[13px] font-bold">
                                 <Link href={'/'}><li className=''><UnderLine text='HOME' /></li></Link>
                                 <Link href={'/#gallery'}><li> <UnderLine text='GALLERY' /></li></Link>
                                 <li>
-                                    <DropdownMenu modal={false}>
+                                    <HoverCard openDelay={0} closeDelay={200}>
+                                        <HoverCardTrigger className='flex items-center gap-2 cursor-pointer'>
+                                            <div className='w-full h-full group flex items-center gap-2 cursor-pointer'>
+                                                <UnderLine text='SERVICES' />
+                                                <ChevronDown size={20} strokeWidth={1} />
+                                            </div>
+                                        </HoverCardTrigger>
+                                        <HoverCardContent className='!p-1 !w-fit mt-3 !z-[100] text-[#8D8888]'>
+                                            <div className='flex flex-col'>
+                                                <span onClick={() => simple_redirect('/services/#digitize')} className='cursor-pointer py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Digitizing</span>
+                                                <DropdownMenuSeparator className='my-0' />
+                                                <span onClick={() => simple_redirect('/services/#vector')} className='cursor-pointer py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Vector</span>
+                                                <DropdownMenuSeparator className='my-0' />
+                                                <span onClick={() => simple_redirect('/services/#engraving')} className='cursor-pointer py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Engraving Designs</span>
+                                            </div>
+                                        </HoverCardContent>
+                                    </HoverCard>
+
+                                    {/* <DropdownMenu modal={false}>
                                         <DropdownMenuTrigger className='flex items-center gap-2'>
                                             <UnderLine text='SERVICES' />
                                             <ChevronDown size={20} strokeWidth={1} />
                                         </DropdownMenuTrigger>
-                                        <DropdownMenuContent className='text-[#8D8888] font-[500] mt-5'>
-                                            <DropdownMenuItem className='cursor-pointer h-10 hover:!bg-transparent' onClick={() => simple_redirect('/services/#digitize')}>
-                                                <UnderLine text='Digitizing' />
+                                        <DropdownMenuContent className='text-[#8D8888] font-bold mt-5'>
+                                            <DropdownMenuItem className='cursor-pointer h-10 hover:!bg-black hover:!text-white transition-all [transition-duration:400ms]' onClick={() => simple_redirect('/services/#digitize')}>
+                                                Digitizing
                                             </DropdownMenuItem>
                                             <DropdownMenuSeparator />
-                                            <DropdownMenuItem className='cursor-pointer h-10 hover:!bg-transparent' onClick={() => simple_redirect('/services/#vector')}>
-                                                <UnderLine text='Vector' />
+                                            <DropdownMenuItem className='cursor-pointer h-10 hover:!bg-black hover:!text-white transition-all [transition-duration:400ms]' onClick={() => simple_redirect('/services/#vector')}>
+                                                Vector
                                             </DropdownMenuItem>
                                             <DropdownMenuSeparator />
-                                            <DropdownMenuItem className='cursor-pointer h-10 hover:!bg-transparent' onClick={() => simple_redirect('/services/#engraving')}>
-                                                <UnderLine text=' Engraving Designs' />
+                                            <DropdownMenuItem className='cursor-pointer h-10 hover:!bg-black hover:!text-white transition-all [transition-duration:400ms]' onClick={() => simple_redirect('/services/#engraving')}>
+                                                Engraving Designs
                                             </DropdownMenuItem>
                                         </DropdownMenuContent>
-                                    </DropdownMenu>
+                                    </DropdownMenu> */}
                                 </li>
                                 <li>
-                                    <DropdownMenu modal={false}>
+                                    <HoverCard openDelay={0} closeDelay={200}>
+                                        <HoverCardTrigger className='flex items-center gap-2 cursor-pointer'>
+                                            <div className='w-full h-full group flex items-center gap-2 cursor-pointer'>
+                                                <UnderLine text='PATCH GALLERY' />
+                                                <ChevronDown size={20} strokeWidth={1} />
+                                            </div>
+                                        </HoverCardTrigger>
+
+                                        <HoverCardContent className='!p-1 !w-fit mt-3 !z-[100] text-[#8D8888]'>
+                                            <div className='flex flex-col'>
+                                                <span onClick={() => simple_redirect('/embroidery-patch')} className='cursor-pointer py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Embroidery Patches</span>
+                                                <DropdownMenuSeparator className='my-0' />
+                                                <span onClick={() => simple_redirect('/embroidery-patch/#leather')} className='cursor-pointer py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Vector</span>
+                                            </div>
+                                        </HoverCardContent>
+                                    </HoverCard>
+                                    {/* <DropdownMenu modal={false}>
                                         <DropdownMenuTrigger className='flex items-center gap-2'>
                                             <UnderLine text='PATCH GALLERY' />
                                             <ChevronDown size={20} strokeWidth={1} />
                                         </DropdownMenuTrigger>
-                                        <DropdownMenuContent className='text-[#8D8888] font-[500] mt-5'>
-                                            <DropdownMenuItem className='cursor-pointer h-10 hover:!bg-transparent' onClick={() => simple_redirect('/embroidery-patch')}>
-                                                <UnderLine text='Embroidery Patches' />
+                                        <DropdownMenuContent className='text-[#8D8888] font-bold mt-5'>
+                                            <DropdownMenuItem className='cursor-pointer h-10 hover:!bg-black hover:!text-white transition-all [transition-duration:400ms]' onClick={() => simple_redirect('/embroidery-patch')}>
+                                                Embroidery Patches
                                             </DropdownMenuItem>
                                             <DropdownMenuSeparator />
-                                            <DropdownMenuItem className='cursor-pointer h-10 hover:!bg-transparent' onClick={() => simple_redirect('/embroidery-patch/#leather')}>
-                                                <UnderLine text='Leather Patches' />
+                                            <DropdownMenuItem className='cursor-pointer h-10 hover:!bg-black hover:!text-white transition-all [transition-duration:400ms]' onClick={() => simple_redirect('/embroidery-patch/#leather')}>
+                                                Leather Patches
                                             </DropdownMenuItem>
                                         </DropdownMenuContent>
-                                    </DropdownMenu>
+                                    </DropdownMenu> */}
                                 </li>
                                 <Link href={'/#contact'}><li><UnderLine text='CONTACT US' /></li></Link>
                                 <Link href={'/#packages'}><li><UnderLine text='OUR PACKAGES' /></li></Link>
                             </ul>
-                            <button className='text-sm py-2 px-5 bg-black text-dark-primary font-bold rounded-md'>Get Quote</button>
+                            <OrderNowLink>
+                                <button className='text-sm py-2 px-5 bg-black text-dark-primary font-bold rounded-md'>Get Quote</button>
+                            </OrderNowLink>
                         </div>
                     </div>
                 </LayoutWrapper>

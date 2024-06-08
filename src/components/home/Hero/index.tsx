@@ -32,7 +32,7 @@ function Hero() {
                 // '/assets/hero-sub-slider1_1.png',
                 // '/assets/embroideryPatch/leather/6.png',
                 // '/assets/vector/12.png',
-                '/assets/embroidery-circle.jpg',
+                '/assets/embroidery-circle.png',
             ]
         },
         {

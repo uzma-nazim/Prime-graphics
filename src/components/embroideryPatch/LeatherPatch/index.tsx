@@ -1,6 +1,6 @@
 'use client'
 
-import { Heading, LayoutWrapper } from '@/components/common';
+import { Heading, LayoutWrapper, OrderNowLink } from '@/components/common';
 import { Check } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react';
@@ -34,7 +34,9 @@ function LeatherPatch() {
                         </ul> */}
                             <p className='text-base lg:text-xl mt-7 tracking-wider ml-5 sm:ml-12'>Enhance the elegance and endurance of your garments and accessories with our bespoke leather patches service. Famed for their durability, leather patches are crafted to endure the trials of time. Embrace the power of branding with our leather patches, offering a stylish platform to showcase your logo with sophistication and flair.</p>
                             <div className='flex justify-center mt-7'>
-                                <button className='py-2 px-4 border-2 border-dark-primary rounded-xl text-sm font-bold text-white bg-dark-primary shadow-lg'>Get Quote</button>
+                                <OrderNowLink>
+                                    <button className='py-2 px-4 border-2 border-dark-primary rounded-xl text-sm font-bold text-white bg-dark-primary shadow-lg'>Get Quote</button>
+                                </OrderNowLink>
                             </div>
                         </div>
                         <div className='flex justify-center w-full md:w-1/2 md:border-l border-[#C5C2C1]'>

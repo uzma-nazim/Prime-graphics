@@ -6,6 +6,7 @@ import Heading from '../Heading';
 import { Mail, MapPinned, Phone } from 'lucide-react';
 import { motion } from 'framer-motion'
 import Link from 'next/link';
+import OrderNowLink from '../OrderNowLink';
 
 function Contact() {
     return (
@@ -90,8 +91,9 @@ function Contact() {
                         </motion.div>
                     </div>
                     <div className='flex justify-center mt-10'>
-                        <Link className='hidden [@media(min-width:900px)]:block' href={'https://mail.google.com/mail/u/0/?view=cm&fs=1&to=primeservice903@gmail.com&tf=1'} target='_blank'><button className='py-3 px-10 font-bold bg-gradient-to-r from-[#FFDB5D] to-[#998438] rounded-xl shadow-lg'>Order Now</button></Link>
-                        <Link className='block [@media(min-width:900px)]:hidden' href={'mailto:primeservice903@gmail.com '} target='_blank'><button className='py-3 px-10 font-bold bg-gradient-to-r from-[#FFDB5D] to-[#998438] rounded-xl shadow-lg'>Order Now</button></Link>
+                        <OrderNowLink>
+                            <button className='py-3 px-10 font-bold bg-gradient-to-r from-[#FFDB5D] to-[#998438] rounded-xl shadow-lg'>Order Now</button>
+                        </OrderNowLink>
                     </div>
                 </div>
             </LayoutWrapper>

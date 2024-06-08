@@ -7,7 +7,7 @@ import 'swiper/css'; // core Swiper
 import 'swiper/css/navigation'; // navigation module
 import { Autoplay, Navigation, FreeMode } from 'swiper/modules';
 import Image from 'next/image';
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 function EmbroideryPatches() {
     let images = [
@@ -31,7 +31,7 @@ function EmbroideryPatches() {
                     viewport={{ once: true }}
                 >
                     <Heading
-                        title='Embroidery Patch Portfolio'
+                        title='Patches Gallery'
                         color='black'
                         text='Each patch in our portfolio is a testament to our dedication to quality.
                     we offer custom designs tailored to your specific requirements.'
@@ -69,10 +69,13 @@ function EmbroideryPatches() {
                         images.map((image, i) => {
                             return (
                                 <SwiperSlide key={i} className=''>
-                                    <div className='relative flex justify-center items-center'>
+                                    <div className='relative flex justify-center items-center rounded-2xl sm:rounded-3xl overflow-hidden'>
                                         <Image src={'/assets/border.png'} className='w-full' width={500} height={500} alt='' />
-                                        <div className='w-full h-full absolute flex justify-center items-center p-2'>
-                                            <Image src={image} className='w-[80%] object-contain' width={400} height={400} alt='not found' />
+                                        <div className='w-full h-full absolute group flex justify-center items-center p-2'>
+                                            <div className='absolute bottom-0 left-0 w-full h-full text-white font-bold flex items-end pb-4 px-4 bg-gradient-to-t from-black/70 via-black/40 to-transparent z-50 translate-y-full group-hover:translate-y-0 transition-all [transition-duration:300ms]'>
+                                                Patches Gallery
+                                            </div>
+                                            <Image src={image} className='w-[80%] object-contain group-hover:scale-125 transition-all origin-center [transition-duration:300ms]' width={400} height={400} alt='not found' />
                                         </div>
                                     </div>
                                 </SwiperSlide>

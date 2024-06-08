@@ -1,6 +1,6 @@
 'use client'
 
-import { Heading, LayoutWrapper } from '@/components/common';
+import { Heading, LayoutWrapper, OrderNowLink } from '@/components/common';
 import { Check } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react';
@@ -17,7 +17,7 @@ function EmbroideryPatch() {
                     viewport={{ once: true }}
                 >
                     <div className='relative z-20'>
-                        <Heading title='Embroidery Patch' color='black' />
+                        <Heading title='Embroidery Patches' color='black' />
                     </div>
                 </motion.div>
                 <motion.div
@@ -41,7 +41,9 @@ function EmbroideryPatch() {
                         </ul> */}
                             <p className='text-base lg:text-xl mt-7 tracking-wider ml-5 sm:ml-12'>Infuse your distinct style and identity into every stitch with our fully customizable embroidery patches. Crafted for longevity, our patches boast durability and resilience, thanks to premium threads and materials. Transform your brand or organization with our expertly crafted embroidery patches, designed to elevate your presence with professionalism and flair.</p>
                             <div className='flex justify-center mt-7'>
-                                <button className='py-2 px-4 border-2 border-dark-primary rounded-xl text-sm font-bold text-white bg-dark-primary shadow-lg'>Get Quote</button>
+                                <OrderNowLink>
+                                    <button className='py-2 px-4 border-2 border-dark-primary rounded-xl text-sm font-bold text-white bg-dark-primary shadow-lg'>Get Quote</button>
+                                </OrderNowLink>
                             </div>
                         </div>
                     </div>

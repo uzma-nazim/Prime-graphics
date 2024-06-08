@@ -28,8 +28,8 @@ function Portfolio() {
     // ]
 
     let data = [
-        ['/assets/portfolio1.png', '/assets/portfolio2.png'],
-        ['/assets/portfolio3.png', '/assets/portfolio4.png'],
+        ['/assets/portfolio1.png', '/assets/portfolio2.JPG'],
+        ['/assets/portfolio3.JPG', '/assets/portfolio4.png'],
         ['/assets/portfolio5.png', '/assets/portfolio6.png'],
         ['/assets/portfolio7.JPG', '/assets/portfolio8.jpg']
     ]
