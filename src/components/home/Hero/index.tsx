@@ -53,7 +53,7 @@ function Hero() {
             ]
         },
         {
-            title: 'Engraving Designs & Digitizing-',
+            title: 'Engraving Designs',
             text: 'Prime Graphics providing you a web-based digitizing source',
             bullets: [
                 'Customized Solutions',
