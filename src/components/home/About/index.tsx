@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 function About() {
     return (
-        <div className={`py-14 bg-[url("/assets/about-bg.png")] bg-cover`}>
+        <div className={`py-14 bg-[url("/assets/about-bg.jpg")] bg-cover`}>
             <LayoutWrapper>
                 <div className='flex flex-col-reverse lg:flex-row justify-between gap-16 lg:gap-5'>
                     <div className='w-full lg:w-[45%]'>

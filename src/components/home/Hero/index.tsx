@@ -27,7 +27,7 @@ function Hero() {
                 'Exceptional Customer Service',
                 'Precision Embroidery Digitizing'
             ],
-            bgImage: '/assets/heroslider1.png',
+            bgImage: '/assets/heroslider1.jpg',
             subSlider: [
                 // '/assets/hero-sub-slider1_1.png',
                 // '/assets/embroideryPatch/leather/6.png',
@@ -44,7 +44,7 @@ function Hero() {
                 'Exceptional Customer Service',
                 'Precision Embroidery Digitizing'
             ],
-            bgImage: '/assets/heroslider2.png',
+            bgImage: '/assets/heroslider2.jpg',
             subSlider: [
                 // '/assets/hero-sub-slider2_1.png',
                 // '/assets/embroideryPatch/patches/7.png',
@@ -61,7 +61,7 @@ function Hero() {
                 'Exceptional Customer Service',
                 'Precision Embroidery Digitizing'
             ],
-            bgImage: '/assets/heroslider3.png',
+            bgImage: '/assets/heroslider3.jpg',
             subSlider: [
                 // '/assets/hero-sub-slider3_1.png',
                 // '/assets/embroideryPatch/patches/8.png',
