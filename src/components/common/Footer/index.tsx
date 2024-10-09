@@ -80,13 +80,11 @@ export default function Footer() {
                                     <div className="text-white flex flex-col gap-7 mt-7">
                                         <div className="flex gap-4">
                                             <MapPin size={30} className="flex-shrink-0" />
-                                            <p className="">(270) 469-1246
-                                                3936 Holley Rd
-                                                Moravia, New York(NY), 13118 </p>
+                                            <p className="">5 Carlisle St, Soho, London W1D 3BJ, United Kingdom </p>
                                         </div>
                                         <div className="flex gap-4">
                                             <Phone className="flex-shrink-0" />
-                                            <p className="">+92 123456789</p>
+                                            <p className="">+44 74 7683 0914</p>
                                         </div>
                                         <div className="flex gap-4">
                                             <Mail className="flex-shrink-0" />

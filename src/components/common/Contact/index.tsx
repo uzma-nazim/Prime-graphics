@@ -33,9 +33,10 @@ function Contact() {
                                 <div className='flex flex-col gap-2'>
                                     <h4 className='text-xl font-semibold'>Location 1:</h4>
                                     <p className='text-[#8D8888] font-light'>
-                                        (270) 469-1246 <br />
-                                        3936 Holley Rd <br />
-                                        Moravia, New York(NY), 13118
+                                      
+                                     5 Carlisle St, Soho, <br />
+                                     London W1D 3BJ, <br />
+                                     United Kingdom
 
                                     </p>
                                 </div>
@@ -52,9 +53,9 @@ function Contact() {
                                 <div className='flex flex-col gap-2'>
                                     <h4 className='text-xl font-semibold'>Location 2:</h4>
                                     <p className='text-[#8D8888] font-light'>
-                                        (270) 788-3011 <br />
-                                        6451 State 64 Rte #3 <br />
-                                        Naples, New York(NY), 14512
+                                    5 Carlisle St, Soho, <br />
+                                     London W1D 3BJ, <br />
+                                     United Kingdom
                                     </p>
                                 </div>
                             </div>
@@ -85,7 +86,7 @@ function Contact() {
                                 <Phone strokeWidth={1} className='flex-shrink-0' size={40} />
                                 <div className='flex flex-col gap-2'>
                                     <h4 className='text-xl font-semibold'>Phone:</h4>
-                                    <p className='text-[#8D8888] font-light'>+447476830914 </p>
+                                    <p className='text-[#8D8888] font-light'>+44 74 7683 0914 </p>
                                 </div>
                             </div>
                         </motion.div>
