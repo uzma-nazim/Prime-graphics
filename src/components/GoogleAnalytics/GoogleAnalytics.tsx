@@ -1,7 +1,7 @@
 "use client";
 import { GoogleAnalytics } from "nextjs-google-analytics";
 
-export const GoogleAnalytic = () => {
+const GoogleAnalytic = () => {
   return (
     <>
       <GoogleAnalytics
@@ -12,3 +12,4 @@ export const GoogleAnalytic = () => {
     </>
   );
 };
+export default GoogleAnalytic
