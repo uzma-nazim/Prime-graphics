@@ -6,7 +6,7 @@ const GoogleAnalytic = () => {
     <>
       <GoogleAnalytics
         trackPageViews
-        gaMeasurementId="G-TBYGY27D7W" // Optional, can be set in .env
+        gaMeasurementId="G-N2BRKLFGR9" // Optional, can be set in .env
         debugMode={false} // Enable for debugging
       />
     </>
