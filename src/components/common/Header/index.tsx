@@ -17,7 +17,7 @@ function Header() {
                         <div className='flex gap-3'>
                             <Link href='https://www.facebook.com/profile.php?id=100083557743100' target='_blank' ><Facebook size={20} strokeWidth={1} /></Link>
                             <Twitter size={20} strokeWidth={1} />
-                            <Link href='https://www.instagram.com/?hl=en' target='_blank' ><Instagram size={20} strokeWidth={1} /></Link>
+                            <Link href='https://www.instagram.com/prime_graphics269' target='_blank' ><Instagram size={20} strokeWidth={1} /></Link>
                             <LinkI size={20} strokeWidth={1} />
                         </div>
                     </div>
