@@ -111,6 +111,7 @@ function Navbar() {
                                             </li>
                                             <Link href={'/#contact'}><li>CONTACT US</li></Link>
                                             <Link href={'/#packages'}><li>OUR PACKAGES</li></Link>
+                                            <Link href={'/embroidery-patch'}><li>Embroidery Patches</li></Link>
                                         </ul>
                                         <OrderNowLink>
                                             <button className='text-sm py-2 px-5 bg-black text-dark-primary font-bold rounded-md'>Get Quote</button>
