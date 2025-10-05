@@ -69,10 +69,13 @@ function Navbar() {
             <div className='border-b border-[#CCC3C3] md:h-[94px]'>
                 <LayoutWrapper>
                     <div className='py-3 flex justify-between items-center'>
+                        <Link href={'/'}>
+                
                         <div className='flex gap-3 items-center'>
                             <Image src={'/assets/logo.png'} width={100} height={100} className='w-[55px] md:w-[70px]' alt='logo' />
                             <p className={`hidden sm:block font-bold `}>Prime Graphics</p>
                         </div>
+                        </Link>
                         <Sheet open={open}>
                             <SheetTrigger onClick={() => setOpen(true)}>
                                 <AlignJustify className='block lg:hidden' />

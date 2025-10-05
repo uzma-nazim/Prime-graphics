@@ -86,7 +86,7 @@ function Contact() {
                                 <Phone strokeWidth={1} className='flex-shrink-0' size={40} />
                                 <div className='flex flex-col gap-2'>
                                     <h4 className='text-xl font-semibold'>Phone:</h4>
-                                    <p className='text-[#8D8888] font-light'>+44 74 7683 0914 </p>
+                                    <p className='text-[#8D8888] font-light'>+44 7429 915781 </p>
                                 </div>
                             </div>
                         </motion.div>
