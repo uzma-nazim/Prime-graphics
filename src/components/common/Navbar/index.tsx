@@ -90,6 +90,7 @@ function Navbar() {
                                         <ul className="flex flex-col gap-12 items-center text-sm font-bold">
                                             <li onClick={() => redirect('/')}>HOME</li>
                                             <li onClick={() => redirect('/#gallery')}>GALLERY</li>
+                                            <li onClick={() => redirect('/#testimonials')}>TESTIMONIALS</li>
                                             <li>
                                                 <DropdownMenu modal={false}>
                                                     <DropdownMenuTrigger className='flex items-center gap-2'>SERVICES <ChevronDown size={20} strokeWidth={1} /></DropdownMenuTrigger>
@@ -130,6 +131,7 @@ function Navbar() {
                             <ul className="flex gap-8 text-[13px] font-bold">
                                 <Link href={'/'}><li className=''><UnderLine text='HOME' /></li></Link>
                                 <Link href={'/#gallery'}><li> <UnderLine text='GALLERY' /></li></Link>
+                                <Link href={'/#testimonials'}><li><UnderLine text='TESTIMONIALS' /></li></Link>
                                 <li>
                                     <HoverCard openDelay={0} closeDelay={200}>
                                         <HoverCardTrigger className='flex items-center gap-2 cursor-pointer'>
