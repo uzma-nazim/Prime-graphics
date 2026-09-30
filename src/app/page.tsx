@@ -1,5 +1,5 @@
 import { Contact, Packages } from "@/components/common";
-import { About, Achievements, EngravingDesigns, Features, Hero, Portfolio, VectorGallery ,MakePayment } from "@/components/home";
+import { About, Achievements, EngravingDesigns, Features, Hero, Portfolio, Testimonials, VectorGallery ,MakePayment } from "@/components/home";
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
       <EngravingDesigns />
       <Features />
       <Achievements />
+      <Testimonials />
       <Packages />
       <MakePayment />
       <Contact />

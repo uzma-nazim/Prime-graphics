@@ -1,5 +1,5 @@
 import { Contact, Packages } from '@/components/common';
-import { EmbroideryPatch, EmbroideryPatches, LeatherPatch, LeatherPatches } from '@/components/embroideryPatch';
+import { EmbroideryPatch, EmbroideryPatches, LeatherPatch, LeatherPatches, PVCPatch, PVCPatches } from '@/components/embroideryPatch';
 import React from 'react';
 
 function Embroidery() {
@@ -9,6 +9,8 @@ function Embroidery() {
             <EmbroideryPatches />
             <LeatherPatch />
             <LeatherPatches />
+            <PVCPatch />
+            <PVCPatches />
             <div className='mt-16'>
                 <Packages />
             </div>

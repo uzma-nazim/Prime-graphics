@@ -109,6 +109,8 @@ function Navbar() {
                                                         <DropdownMenuItem onClick={() => redirect('/embroidery-patch')}>Embroidery Patches</DropdownMenuItem>
                                                         <DropdownMenuSeparator />
                                                         <DropdownMenuItem onClick={() => redirect('/embroidery-patch/#leather')}>Leather Patches</DropdownMenuItem>
+                                                        <DropdownMenuSeparator />
+                                                        <DropdownMenuItem onClick={() => redirect('/embroidery-patch/#pvc')}>PVC Patches</DropdownMenuItem>
                                                     </DropdownMenuContent>
                                                 </DropdownMenu>
                                             </li>
@@ -181,6 +183,9 @@ function Navbar() {
                                                 <span onClick={() => simple_redirect('/embroidery-patch')} className='cursor-pointer py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Embroidery Patches</span>
                                                 <DropdownMenuSeparator className='my-0' />
                                                 <span onClick={() => simple_redirect('/embroidery-patch/#leather')} className='cursor-pointer py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Leather Patches</span>
+                                                  <DropdownMenuSeparator className='my-0' />
+                                                <span onClick={() => simple_redirect('/embroidery-patch/#pvc')} className='cursor-pointer py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>PVC Patches</span>
+                                                
                                             </div>
                                         </HoverCardContent>
                                     </HoverCard>
