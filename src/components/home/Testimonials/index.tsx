@@ -2,7 +2,7 @@
 
 import { Heading, LayoutWrapper } from '@/components/common';
 import * as Dialog from '@radix-ui/react-dialog';
-import { ChevronLeft, ChevronRight, Play, Quote, X } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Play, Quote, Star, X } from 'lucide-react';
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import type { Swiper as SwiperInstance } from 'swiper';
@@ -138,6 +138,19 @@ function Testimonials() {
 									<div className='mt-6 flex items-end justify-between gap-3 border-t border-[#323131]/10 pt-4'>
 										<div>
 											<h3 className='font-semibold text-[#323131]'>{testimonial.name}</h3>
+											<div className='mt-1.5 flex items-center gap-2'>
+												<div className='flex gap-0.5' role='img' aria-label='5 out of 5 stars'>
+													{Array.from({ length: 5 }, (_, starIndex) => (
+														<Star key={starIndex} size={14} fill='currentColor' className='text-[#D5A900]' aria-hidden='true' />
+													))}
+												</div>
+												<svg viewBox='0 0 48 48' className='h-4 w-4' aria-label='Google' role='img'>
+													<path fill='#4285F4' d='M43.6 24.5c0-1.4-.1-2.8-.4-4.1H24v7.8h11a9.4 9.4 0 0 1-4.1 6.2v5.1h6.6c3.9-3.6 6.1-8.8 6.1-15Z' />
+													<path fill='#34A853' d='M24 44c5.5 0 10.1-1.8 13.5-4.8l-6.6-5.1c-1.8 1.2-4.1 2-6.9 2-5.3 0-9.8-3.6-11.4-8.4H5.8v5.3A20 20 0 0 0 24 44Z' />
+													<path fill='#FBBC05' d='M12.6 27.7a12 12 0 0 1 0-7.4V15H5.8a20 20 0 0 0 0 18l6.8-5.3Z' />
+													<path fill='#EA4335' d='M24 11.9c3 0 5.7 1 7.8 3.1l5.9-5.9C34.1 5.8 29.5 4 24 4A20 20 0 0 0 5.8 15l6.8 5.3c1.6-4.8 6.1-8.4 11.4-8.4Z' />
+												</svg>
+											</div>
 										</div>
 										{testimonial.videoUrl && (
 											<button
