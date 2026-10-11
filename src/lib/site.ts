@@ -31,7 +31,7 @@ export type Faq = { q: string; a: string };
 export const homeFaqs: Faq[] = [
     {
         q: 'What custom patches does Prime Graphics make?',
-        a: 'We make custom embroidered patches, PVC (rubber) patches, leather patches and sublimation (full-colour printed) patches with your logo, for hats, uniforms, jackets, bags, clubs and brand merchandise. Send your logo for a free design mock-up and quote.',
+        a: 'We make custom embroidered patches, PVC (rubber) patches, leather patches and sublimation (full-colour printed) patches with your logo, for hats, uniforms, jackets, bags, clubs and brand merchandise, with all common backings (sew-on, iron-on, Velcro, adhesive and more) and worldwide shipping. Send your logo for a free design mock-up and quote.',
     },
     {
         q: 'How much does embroidery digitizing cost?',

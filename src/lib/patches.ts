@@ -1,8 +1,25 @@
 import type { Faq } from './site';
 
 // Content for each custom patch landing page. Only facts the business has confirmed go here.
-// TODO (owner): add minimum order, price per patch, production/shipping time and backing options
-// once confirmed — they are the facts customers and AI assistants look for most.
+// Confirmed by owner: minimum order and production/shipping time depend on patch type and size;
+// worldwide shipping; all common backing types available.
+
+const BACKINGS = 'sew-on, iron-on, Velcro (hook and loop), peel-and-stick adhesive and more';
+
+const sharedFaqs = (name: string): Faq[] => [
+    {
+        q: `What is the minimum order for custom ${name.toLowerCase()}?`,
+        a: `The minimum order depends on the patch type and size. Send us your design, size and quantity and we will confirm the minimum and price in your free quote.`,
+    },
+    {
+        q: `What backings are available for ${name.toLowerCase()}?`,
+        a: `We offer all common backings, including ${BACKINGS}. Tell us how the patch will be attached and we will recommend the best option.`,
+    },
+    {
+        q: `Do you ship custom ${name.toLowerCase()} worldwide?`,
+        a: 'Yes. We work globally and ship to customers in cities across the UK, USA, Canada, Australia, Europe and beyond. Production and delivery time depend on the patch type, size and quantity, and we confirm it with your quote.',
+    },
+];
 
 export type PatchType = {
     slug: string;
@@ -37,7 +54,7 @@ export const patchTypes: PatchType[] = [
         eyebrow: 'Made to order · UK, USA & worldwide',
         intro:
             'Turn your logo, club crest or artwork into durable custom embroidered patches. We digitize every design in-house, so your patch stitches out sharp, with clean lettering and accurate colours.',
-        highlights: ['Free design mock-up & quote', 'Any size, shape and thread colours', 'Digitized in-house for sharp detail', 'For hats, uniforms, jackets & merch'],
+        highlights: ['Free design mock-up & quote', 'All backings: sew-on, iron-on, Velcro & more', 'Worldwide shipping', 'Any size, shape and thread colours', 'Digitized in-house for sharp detail', 'For hats, uniforms, jackets & merch'],
         heroImage: '/assets/embroideryPatch/embroidery-patch.svg',
         heroAlt: 'Custom embroidered patch made by Prime Graphics',
         gallery: embroideredGallery,
@@ -58,7 +75,7 @@ export const patchTypes: PatchType[] = [
             },
         ],
         uses: ['Hats and trucker caps', 'Work uniforms and hi-vis', 'Biker and denim jackets', 'Sports teams and clubs', 'Brand merchandise', 'Bags and backpacks'],
-        faqs: [
+        faqs: [...sharedFaqs('Embroidered Patches'),
             {
                 q: 'How do I order custom embroidered patches?',
                 a: 'Email your logo or artwork, the size and the quantity to primeservice903@gmail.com or call +44 7429 915781. We reply with a free mock-up and quote, then produce your patches once you approve the design.',
@@ -83,7 +100,7 @@ export const patchTypes: PatchType[] = [
         eyebrow: 'Rubber logo patches · UK, USA & worldwide',
         intro:
             'Give your brand a bold, dimensional finish with custom PVC patches. Made from durable, flexible material, they hold crisp detail and vibrant colour while standing up to everyday wear.',
-        highlights: ['Free design mock-up & quote', 'Crisp raised detail', 'Flexible, durable and weather-resistant', 'For hats, bags, uniforms & gear'],
+        highlights: ['Free design mock-up & quote', 'All backings: sew-on, iron-on, Velcro & more', 'Worldwide shipping', 'Crisp raised detail', 'Flexible, durable and weather-resistant', 'For hats, bags, uniforms & gear'],
         heroImage: '/assets/embroideryPatch/pvc/custom-pvc-patches.jpg',
         heroAlt: 'Custom PVC rubber patches with logos',
         gallery: pvcGallery,
@@ -104,7 +121,7 @@ export const patchTypes: PatchType[] = [
             },
         ],
         uses: ['Trucker hats and caps', 'Tactical and airsoft gear', 'Outdoor and fishing brands', 'Bags and backpacks', 'Workwear and uniforms', 'Keychains and merch'],
-        faqs: [
+        faqs: [...sharedFaqs('PVC Patches'),
             {
                 q: 'What are custom PVC patches?',
                 a: 'Custom PVC patches are flexible rubber patches moulded with your logo. They have raised 2D or 3D detail, bright colours and are waterproof and very durable.',
@@ -129,7 +146,7 @@ export const patchTypes: PatchType[] = [
         eyebrow: 'Engraved & branded leather · UK, USA & worldwide',
         intro:
             'Add timeless, premium branding to hats, denim, jackets and bags with custom leather patches. Leather is known for its durability, and it ages beautifully, making your logo look better over time.',
-        highlights: ['Free design mock-up & quote', 'Your logo branded on leather', 'Durable, premium look', 'For hats, jeans, jackets & bags'],
+        highlights: ['Free design mock-up & quote', 'All backings: sew-on, iron-on, Velcro & more', 'Worldwide shipping', 'Your logo branded on leather', 'Durable, premium look', 'For hats, jeans, jackets & bags'],
         heroImage: '/assets/embroideryPatch/leather-patch.png',
         heroAlt: 'Custom leather patch with engraved logo',
         gallery: leatherGallery,
@@ -149,7 +166,7 @@ export const patchTypes: PatchType[] = [
             },
         ],
         uses: ['Leather patch hats', 'Jeans and denim labels', 'Jackets and outerwear', 'Bags and accessories', 'Corporate and event gifts', 'Handmade product labels'],
-        faqs: [
+        faqs: [...sharedFaqs('Leather Patches'),
             {
                 q: 'Can you put my logo on a leather patch?',
                 a: 'Yes. We prepare your logo for engraving and produce custom leather patches in the size and shape you need. Send your logo for a free mock-up.',
@@ -174,7 +191,7 @@ export const patchTypes: PatchType[] = [
         eyebrow: 'Full-colour printed patches · UK, USA & worldwide',
         intro:
             'When your design has photos, gradients, fine text or lots of colours, sublimation patches reproduce it exactly. The artwork is printed directly into the fabric for vivid, full-colour patches that won’t crack or peel.',
-        highlights: ['Free design mock-up & quote', 'Unlimited colours and gradients', 'Photo-quality detail', 'Smooth, lightweight finish'],
+        highlights: ['Free design mock-up & quote', 'All backings: sew-on, iron-on, Velcro & more', 'Worldwide shipping', 'Unlimited colours and gradients', 'Photo-quality detail', 'Smooth, lightweight finish'],
         heroImage: undefined,
         heroAlt: '',
         gallery: [],
@@ -195,7 +212,7 @@ export const patchTypes: PatchType[] = [
             },
         ],
         uses: ['Photo and portrait patches', 'Detailed or multi-colour logos', 'Event and memorial patches', 'Sports teams and fan merch', 'Hats and jackets', 'Brand merchandise'],
-        faqs: [
+        faqs: [...sharedFaqs('Sublimation Patches'),
             {
                 q: 'What is a sublimation patch?',
                 a: 'A sublimation patch is a printed patch where the design is heat-transferred into the fabric. It allows unlimited colours, gradients and photo-quality detail with a smooth, flat finish.',
@@ -226,8 +243,16 @@ export const patchHubFaqs: Faq[] = [
         a: 'Email your logo, the size, quantity and patch type to primeservice903@gmail.com or call +44 7429 915781. We send a free design mock-up and quote and start production once you approve.',
     },
     {
-        q: 'Do you make custom patches for customers in the USA and UK?',
-        a: 'Yes. Prime Graphics works with businesses, clubs and brands in the UK, USA and worldwide.',
+        q: 'Do you ship custom patches worldwide?',
+        a: 'Yes. Prime Graphics works globally, with customers in cities across the UK, USA, Canada, Australia, Europe and beyond. Production and delivery time depend on the patch type, size and quantity and are confirmed with your quote.',
+    },
+    {
+        q: 'What is the minimum order for custom patches?',
+        a: 'The minimum order depends on the patch type and size. Send your design, size and quantity for a free quote with the exact minimum and price.',
+    },
+    {
+        q: 'What patch backings do you offer?',
+        a: `We offer all common backings, including ${BACKINGS}.`,
     },
     {
         q: 'Can you design my patch if I only have an idea?',
