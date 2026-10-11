@@ -19,23 +19,8 @@ const kaushanScript = Kaushan_Script({ subsets: ["latin"], weight: ["400"] });
 function Hero() {
     let data = [
         {
-            title: 'Custom Patches',
-            text: 'Embroidered, PVC, leather & sublimation patches with your logo, for brands, teams and clubs in the UK, USA & worldwide',
-            imageAlt: 'Custom embroidered patch made by Prime Graphics',
-            bullets: [
-                'Free Design Mock-up & Quote',
-                'Embroidered & PVC Patches',
-                'Leather & Sublimation Patches',
-                'For Hats, Uniforms & Merch'
-            ],
-            bgImage: '/assets/heroslider1.jpg',
-            subSlider: [
-                '/assets/embroideryPatch/patches/1.png',
-            ]
-        },
-        {
-            title: 'Embroidery Digitizing Services',
-            text: 'Logo digitizing & DST files for embroidery shops in the UK, USA and worldwide',
+            title: 'Prime Graphics & Embroidery Services',
+            text: 'Prime Graphics providing you a web-based digitizing source',
             imageAlt: 'Embroidery digitizing sample logo',
             bullets: [
                 'Customized Solutions',
@@ -52,8 +37,8 @@ function Hero() {
             ]
         },
         {
-            title: 'Vector Art Conversion',
-            text: 'Raster to vector logo redraws, ready for print, DTF, screen printing and cutting',
+            title: 'Vector Art & Services',
+            text: 'Prime Graphics providing you a web-based digitizing source',
             imageAlt: 'Raster to vector art conversion sample',
             bullets: [
                 'Customized Solutions',
@@ -70,8 +55,8 @@ function Hero() {
             ]
         },
         {
-            title: 'Laser Engraving Designs',
-            text: 'Clean, production-ready engraving artwork for laser and CNC machines',
+            title: 'Engraving Designs',
+            text: 'Prime Graphics providing you a web-based digitizing source',
             imageAlt: 'Laser engraving design sample',
             bullets: [
                 'Customized Solutions',

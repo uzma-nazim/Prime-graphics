@@ -33,7 +33,7 @@ function EmbroideryPatch() {
                             </div>
                         </div>
                         <div className='w-full md:w-1/2 md:pl-10 mt-10 md:mt-0'>
-                            <h2 className='text-xl sm:text-2xl lg:text-3xl font-medium flex gap-3'><Check className='text-dark-primary flex-shrink-0' size={30} strokeWidth={3} /> Personalized, Detailed and Durable Designs</h2>
+                            <h1 className='text-xl sm:text-2xl lg:text-3xl font-medium flex gap-3'><Check className='text-dark-primary flex-shrink-0' size={30} strokeWidth={3} /> Personalized, Detailed and Durable Designs</h1>
                             {/* <ul className='text-base lg:text-xl mt-7 tracking-wider list-disc list-outside ml-5 sm:ml-16 flex flex-col gap-3'>
                             <li>Express your unique style and identity with fully customizable embroidery patches.</li>
                             <li>Our embroidery patches are made to last. Constructed with high-quality threads and materials, they withstand regular wear and tear.</li>

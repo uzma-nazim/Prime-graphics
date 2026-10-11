@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Contact, FaqSection, LayoutWrapper, OrderNowLink, Packages } from '@/components/common';
+import { Contact, FaqSection, LayoutWrapper, Packages } from '@/components/common';
 import SocialLinks from '@/components/common/SocialLinks';
 import { EmbroideryPatch, EmbroideryPatches, LeatherPatch, LeatherPatches, PVCPatch, PVCPatches } from '@/components/embroideryPatch';
 import { BreadcrumbJsonLd, ServiceJsonLd } from '@/components/seo/JsonLd';
-import { patchHubFaqs, patchTypes } from '@/lib/patches';
+import { patchHubFaqs } from '@/lib/patches';
 
 const title = 'Custom Patches – Embroidered, PVC, Leather & Sublimation';
 const description =
@@ -22,31 +22,6 @@ function CustomPatches() {
         <div>
             <ServiceJsonLd name='Custom Patches' description={description} path='/custom-patches' />
             <BreadcrumbJsonLd items={[{ name: 'Home', path: '/' }, { name: 'Custom Patches', path: '/custom-patches' }]} />
-
-            <section className='bg-secondary text-white py-16 md:py-20'>
-                <LayoutWrapper>
-                    <div className='text-center w-full lg:w-[80%] mx-auto'>
-                        <p className='text-dark-primary font-semibold uppercase tracking-wider text-sm'>Made to order · UK, USA & worldwide</p>
-                        <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold mt-4 leading-tight'>Custom Patches for Brands, Teams &amp; Clubs</h1>
-                        <p className='text-lg lg:text-xl mt-6 text-white/85'>
-                            Prime Graphics makes custom embroidered, PVC, leather and sublimation patches with your logo. Send your artwork for a
-                            free design mock-up and quote. We design, digitize and produce everything for you.
-                        </p>
-                        <div className='mt-8 grid grid-cols-2 lg:grid-cols-4 gap-3'>
-                            {patchTypes.map((p) => (
-                                <Link key={p.slug} href={`/${p.slug}`} className='rounded-xl border-2 border-dark-primary px-4 py-3 font-semibold hover:bg-dark-primary hover:text-secondary transition-colors'>
-                                    {p.name}
-                                </Link>
-                            ))}
-                        </div>
-                        <div className='mt-10 flex justify-center'>
-                            <OrderNowLink>
-                                <span className='inline-block py-3 px-10 font-bold text-secondary bg-gradient-to-r from-[#FFDB5D] to-[#998438] rounded-xl shadow-lg'>Get a Free Quote</span>
-                            </OrderNowLink>
-                        </div>
-                    </div>
-                </LayoutWrapper>
-            </section>
 
             <EmbroideryPatch />
             <EmbroideryPatches />
