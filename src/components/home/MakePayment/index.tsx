@@ -32,7 +32,7 @@ function MakePayment() {
                         <div className='flex flex-col items-center mt-14'>
                             <Link href={'https://paypal.me/Paymentlink524?country.x=GB&locale.x=en_GB'} target='_blank'>
                                 <button className='font-bold flex items-center gap-2 bg-dark-primary py-1 px-5 rounded-xl shadow-md'>
-                                    <Image src={'/assets/paypal-logo.png'} width={70} height={70} className='w-[35px]' alt='paypal-logo' />
+                                    <Image src={'/assets/paypal-logo.png'} width={70} height={70} className='w-[35px]' alt='PayPal' />
                                     Pay Now
                                 </button>
                             </Link>

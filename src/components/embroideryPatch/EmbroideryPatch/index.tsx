@@ -29,11 +29,11 @@ function EmbroideryPatch() {
                     <div className='block md:flex relative z-20'>
                         <div className='flex justify-center w-full md:w-1/2 md:border-r border-[#C5C2C1]'>
                             <div className='w-[70%] lg:w-[60%] overflow-hidden'>
-                                <Image src={'/assets/embroideryPatch/embroidery-patch.svg'} width={500} height={500} className='w-full object-contain hover:scale-125 transition-all origin-center [transition-duration:300ms]' alt='digitize' />
+                                <Image src={'/assets/embroideryPatch/embroidery-patch.svg'} width={500} height={500} className='w-full object-contain hover:scale-125 transition-all origin-center [transition-duration:300ms]' alt='Custom embroidered patch made by Prime Graphics' />
                             </div>
                         </div>
                         <div className='w-full md:w-1/2 md:pl-10 mt-10 md:mt-0'>
-                            <h1 className='text-xl sm:text-2xl lg:text-3xl font-medium flex gap-3'><Check className='text-dark-primary flex-shrink-0' size={30} strokeWidth={3} /> Personalized, Detailed and Durable Designs</h1>
+                            <h2 className='text-xl sm:text-2xl lg:text-3xl font-medium flex gap-3'><Check className='text-dark-primary flex-shrink-0' size={30} strokeWidth={3} /> Personalized, Detailed and Durable Designs</h2>
                             {/* <ul className='text-base lg:text-xl mt-7 tracking-wider list-disc list-outside ml-5 sm:ml-16 flex flex-col gap-3'>
                             <li>Express your unique style and identity with fully customizable embroidery patches.</li>
                             <li>Our embroidery patches are made to last. Constructed with high-quality threads and materials, they withstand regular wear and tear.</li>

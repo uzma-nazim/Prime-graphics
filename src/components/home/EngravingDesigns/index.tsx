@@ -65,7 +65,7 @@ function EngravingDesigns() {
                                         viewport={{ once: true }}
                                     >
                                         <div className='px-5 py-10 h-[300px] rounded-md bg-white shadow-[0_0_10px_rgba(0,0,0,0.3)] flex justify-center items-center'>
-                                            <Image src={image} width={400} height={400} className='w-auto h-full object-contain' alt='image' />
+                                            <Image src={image} width={400} height={400} className='w-auto h-full object-contain' alt='Laser engraving design sample by Prime Graphics' />
                                         </div>
                                     </motion.div>
                                 )
@@ -126,13 +126,13 @@ function EngravingDesigns() {
                                                     <div className='absolute bottom-0 w-full h-full text-white font-bold flex items-end pb-4 px-4 bg-gradient-to-t from-black/70 via-black/40 to-transparent z-50 translate-y-full group-hover:translate-y-0 transition-all [transition-duration:300ms]'>
                                                         Engraving Design
                                                     </div>
-                                                    <Image src={image[0]} width={400} height={400} className='w-auto h-full object-contain group-hover:scale-110 transition-all origin-center [transition-duration:300ms]' alt='image' />
+                                                    <Image src={image[0]} width={400} height={400} className='w-auto h-full object-contain group-hover:scale-110 transition-all origin-center [transition-duration:300ms]' alt='Laser engraving design sample by Prime Graphics' />
                                                 </div>
                                                 <div className='relative px-5 py-10 h-[300px] rounded-md group bg-white shadow-[0_0_10px_rgba(0,0,0,0.3)] flex justify-center items-center overflow-hidden'>
                                                     <div className='absolute bottom-0 w-full h-full text-white font-bold flex items-end pb-4 px-4 bg-gradient-to-t from-black/70 via-black/40 to-transparent z-50 translate-y-full group-hover:translate-y-0 transition-all [transition-duration:300ms]'>
                                                         Engraving Design
                                                     </div>
-                                                    <Image src={image[1]} width={400} height={400} className='w-auto h-full object-contain group-hover:scale-110 transition-all origin-center [transition-duration:300ms]' alt='image' />
+                                                    <Image src={image[1]} width={400} height={400} className='w-auto h-full object-contain group-hover:scale-110 transition-all origin-center [transition-duration:300ms]' alt='Laser engraving design sample by Prime Graphics' />
                                                 </div>
                                             </div>
                                         </SwiperSlide>

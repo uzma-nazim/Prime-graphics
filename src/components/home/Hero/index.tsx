@@ -19,8 +19,24 @@ const kaushanScript = Kaushan_Script({ subsets: ["latin"], weight: ["400"] });
 function Hero() {
     let data = [
         {
-            title: 'Prime Graphics & Embroidery Services',
-            text: 'Prime Graphics providing you a web-based digitizing source',
+            title: 'Custom Patches',
+            text: 'Embroidered, PVC, leather & sublimation patches with your logo, for brands, teams and clubs in the UK, USA & worldwide',
+            imageAlt: 'Custom embroidered patch made by Prime Graphics',
+            bullets: [
+                'Free Design Mock-up & Quote',
+                'Embroidered & PVC Patches',
+                'Leather & Sublimation Patches',
+                'For Hats, Uniforms & Merch'
+            ],
+            bgImage: '/assets/heroslider1.jpg',
+            subSlider: [
+                '/assets/embroideryPatch/patches/1.png',
+            ]
+        },
+        {
+            title: 'Embroidery Digitizing Services',
+            text: 'Logo digitizing & DST files for embroidery shops in the UK, USA and worldwide',
+            imageAlt: 'Embroidery digitizing sample logo',
             bullets: [
                 'Customized Solutions',
                 'Quick Turnaround',
@@ -36,8 +52,9 @@ function Hero() {
             ]
         },
         {
-            title: 'Vector Art & Services',
-            text: 'Prime Graphics providing you a web-based digitizing source',
+            title: 'Vector Art Conversion',
+            text: 'Raster to vector logo redraws, ready for print, DTF, screen printing and cutting',
+            imageAlt: 'Raster to vector art conversion sample',
             bullets: [
                 'Customized Solutions',
                 'Quick Turnaround',
@@ -53,8 +70,9 @@ function Hero() {
             ]
         },
         {
-            title: 'Engraving Designs',
-            text: 'Prime Graphics providing you a web-based digitizing source',
+            title: 'Laser Engraving Designs',
+            text: 'Clean, production-ready engraving artwork for laser and CNC machines',
+            imageAlt: 'Laser engraving design sample',
             bullets: [
                 'Customized Solutions',
                 'Quick Turnaround',
@@ -75,14 +93,14 @@ function Hero() {
             <div className='absolute top-0 !z-50 w-full'>
                 <Marquee className='bg-black text-white py-1'>
                     <div className='flex items-center gap-2 mx-24'>
-                        <Image src={'/assets/gift.png'} className='w-[30px]' width={50} height={50} alt='gift' />
+                        <Image src={'/assets/gift.png'} className='w-[30px]' width={50} height={50} alt='' />
                         We offer a $free trial for your first simple order to showcase our quality and turnaround time.
-                        <Image src={'/assets/gift.png'} className='w-[30px]' width={50} height={50} alt='gift' />
+                        <Image src={'/assets/gift.png'} className='w-[30px]' width={50} height={50} alt='' />
                     </div>
                     <div className='flex items-center gap-2 mx-24'>
-                        <Image src={'/assets/gift.png'} className='w-[30px]' width={50} height={50} alt='gift' />
+                        <Image src={'/assets/gift.png'} className='w-[30px]' width={50} height={50} alt='' />
                         We offer a $free trial for your first simple order to showcase our quality and turnaround time.
-                        <Image src={'/assets/gift.png'} className='w-[30px]' width={50} height={50} alt='gift' />
+                        <Image src={'/assets/gift.png'} className='w-[30px]' width={50} height={50} alt='' />
                     </div>
                 </Marquee>
             </div>
@@ -113,7 +131,11 @@ function Hero() {
                                                         transition={{ duration: 1 }}
                                                         viewport={{ once: true }}
                                                     >
-                                                        <h1 className={`text-3xl lg:text-[40px] text-white font-semibold leading-tight ${kaushanScript.className}`}>{val.title}</h1>
+                                                        {i === 0 ? (
+                                                            <h1 className={`text-3xl lg:text-[40px] text-white font-semibold leading-tight ${kaushanScript.className}`}>{val.title}</h1>
+                                                        ) : (
+                                                            <h2 className={`text-3xl lg:text-[40px] text-white font-semibold leading-tight ${kaushanScript.className}`}>{val.title}</h2>
+                                                        )}
                                                         <div className='w-[250px] h-[5px] bg-dark-primary mt-3'></div>
                                                         <p className='text-xl lg:text-[25px] text-white mt-8 leading-tight'>{val.text}</p>
                                                         <div className='text-white mt-8 flex flex-col gap-3 lg:gap-5'>
@@ -157,8 +179,8 @@ function Hero() {
                                                                 val.subSlider.map((image, sub_i) => {
                                                                     return (
                                                                         <SwiperSlide key={sub_i} className='flex items-center justify-center !my-auto relative py-10'>
-                                                                            <Image src={'/assets/hero-cover.png'} width={500} height={500} className='w-[90%] absolute left-0 top-5' alt='hero' />
-                                                                            <Image src={image} width={500} height={500} className='w-[90%] !mx-auto my-5 relative z-30' alt='hero' />
+                                                                            <Image src={'/assets/hero-cover.png'} width={500} height={500} className='w-[90%] absolute left-0 top-5' alt='' />
+                                                                            <Image src={image} width={500} height={500} className='w-[90%] !mx-auto my-5 relative z-30' alt={val.imageAlt} />
                                                                         </SwiperSlide>
                                                                     )
                                                                 })

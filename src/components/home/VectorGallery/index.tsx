@@ -58,7 +58,7 @@ function VideoGallery() {
                             data.map((image, i) => {
                                 return (
                                     <div key={i} className='bg-[#CBD5FB]/20 h-[300px] sm:h-[350px] rounded-xl border-2 border-[#6D6D6D] py-10 px-8'>
-                                        <Image src={image} width={500} height={500} className='w-full h-full object-contain' alt='image' />
+                                        <Image src={image} width={500} height={500} className='w-full h-full object-contain' alt='Vector art conversion sample by Prime Graphics' />
                                     </div>
                                 )
                             })
@@ -117,13 +117,13 @@ function VideoGallery() {
                                                         <div className='absolute bottom-0 left-0 w-full h-full text-white font-bold flex items-end pb-4 px-4 bg-gradient-to-t from-black/70 via-black/40 to-transparent z-50 translate-y-full group-hover:translate-y-0 transition-all [transition-duration:300ms]'>
                                                             Vector Gallery
                                                         </div>
-                                                        <Image src={image[0]} width={500} height={500} className='w-full h-full object-contain group-hover:scale-110 transition-all origin-center [transition-duration:300ms]' alt='image' />
+                                                        <Image src={image[0]} width={500} height={500} className='w-full h-full object-contain group-hover:scale-110 transition-all origin-center [transition-duration:300ms]' alt='Vector art conversion sample by Prime Graphics' />
                                                     </div>
                                                     <div key={i} className='relative bg-[#CBD5FB]/20 h-[300px] overflow-hidden group sm:h-[350px] rounded-xl border-2 border-[#6D6D6D] py-10 px-8 '>
                                                         <div className='absolute bottom-0 left-0 w-full h-full text-white font-bold flex items-end pb-4 px-4 bg-gradient-to-t from-black/70 via-black/40 to-transparent z-50 translate-y-full group-hover:translate-y-0 transition-all [transition-duration:300ms]'>
                                                             Vector Gallery
                                                         </div>
-                                                        <Image src={image[1]} width={500} height={500} className='w-full h-full object-contain group-hover:scale-110 transition-all origin-center [transition-duration:300ms]' alt='image' />
+                                                        <Image src={image[1]} width={500} height={500} className='w-full h-full object-contain group-hover:scale-110 transition-all origin-center [transition-duration:300ms]' alt='Vector art conversion sample by Prime Graphics' />
                                                     </div>
                                                 </div>
                                             </SwiperSlide>

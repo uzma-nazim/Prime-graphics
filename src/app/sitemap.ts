@@ -1,24 +1,23 @@
-import { MetadataRoute } from 'next'
- 
+import type { MetadataRoute } from 'next';
+import { SITE_URL } from '@/lib/site';
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: 'https://www.theprimegraphics.com',
-      changeFrequency: 'yearly',
-      priority: 1.0,
-    },
-    {
-      url: 'https://www.theprimegraphics.com/embroidery-patch',
-      changeFrequency: 'yearly',
-      priority: 1.0,
-    },
-
-    {
-      url: 'https://www.theprimegraphics.com/services',
-      changeFrequency: 'yearly',
-      priority: 1.0,
-    },
-
-
-  ]
+    const lastModified = new Date();
+    const pages: { path: string; priority: number }[] = [
+        { path: '', priority: 1.0 },
+        { path: '/embroidery-digitizing', priority: 0.9 },
+        { path: '/vector-art-conversion', priority: 0.9 },
+        { path: '/custom-patches', priority: 1.0 },
+        { path: '/custom-embroidered-patches', priority: 0.9 },
+        { path: '/custom-pvc-patches', priority: 0.9 },
+        { path: '/custom-leather-patches', priority: 0.9 },
+        { path: '/custom-sublimation-patches', priority: 0.9 },
+        { path: '/services', priority: 0.8 },
+    ];
+    return pages.map((p) => ({
+        url: `${SITE_URL}${p.path}`,
+        lastModified,
+        changeFrequency: 'monthly',
+        priority: p.priority,
+    }));
 }

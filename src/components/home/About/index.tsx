@@ -16,7 +16,7 @@ function About() {
                             transition={{ duration: 1 }}
                             viewport={{ once: true }}
                         >
-                            <Image src={'/assets/about.png'} width={700} height={700} className='w-full' alt='about' />
+                            <Image src={'/assets/about.png'} width={700} height={700} className='w-full' alt='Prime Graphics embroidery digitizing and vector art team at work' />
                         </motion.div>
                     </div>
                     <div className='w-full lg:w-[45%]'>

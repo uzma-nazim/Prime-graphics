@@ -1,7 +1,8 @@
-import { Facebook, Instagram, Mail, MapPin, Phone, Twitter } from "lucide-react"
+import { Mail, MapPin, Phone } from "lucide-react"
 import Image from "next/image"
 import LayoutWrapper from "../LayoutWrapper"
 import Link from "next/link"
+import SocialLinks from "../SocialLinks"
 
 const navigation = {
     company: [
@@ -11,10 +12,18 @@ const navigation = {
         { name: 'Services', href: '/services' },
         { name: 'Packages', href: '/#packages' },
     ],
+    patches: [
+        { name: 'All Custom Patches', href: '/custom-patches' },
+        { name: 'Embroidered Patches', href: '/custom-embroidered-patches' },
+        { name: 'PVC Patches', href: '/custom-pvc-patches' },
+        { name: 'Leather Patches', href: '/custom-leather-patches' },
+        { name: 'Sublimation Patches', href: '/custom-sublimation-patches' },
+    ],
     solutions: [
-        { name: 'Digitizing', href: '/services/#digitizing' },
-        { name: 'Vector', href: '/services/#vector' },
-        { name: 'Embroidery', href: '/services/#engraving' },
+        { name: 'Embroidery Digitizing', href: '/embroidery-digitizing' },
+        { name: 'Vector Art Conversion', href: '/vector-art-conversion' },
+        { name: 'Engraving Designs', href: '/services#engraving' },
+        { name: 'FAQ', href: '/#faq' },
     ],
 }
 
@@ -33,18 +42,14 @@ export default function Footer() {
                                 src="/assets/logo.png"
                                 width={200}
                                 height={200}
-                                alt="Company name"
+                                alt="Prime Graphics logo"
                             />
                             <p className="leading-6 mt-2 text-white">
                                 Prime Graphics
                             </p>
                             <div className="flex flex-col gap-4 mt-10">
                                 <p className="font-semibold text-white">Follow Us:</p>
-                                <div className='flex gap-3 text-white'>
-                                    <Twitter size={20} strokeWidth={1} />
-                                    <Link href='https://www.facebook.com/profile.php?id=100083557743100' target='_blank' ><Facebook size={20} strokeWidth={1} /></Link>
-                                    <Link href='https://www.instagram.com/prime_graphics269' target='_blank' ><Instagram size={20} strokeWidth={1} /></Link>
-                                </div>
+                                <SocialLinks />
                             </div>
                         </div>
                         <div className="mt-16 sm:grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
@@ -62,7 +67,17 @@ export default function Footer() {
                                     </ul>
                                 </div>
                                 <div className="mt-10 md:mt-0">
-                                    <h3 className="font-semibold leading-6 text-white">Solutions</h3>
+                                    <h3 className="font-semibold leading-6 text-white">Custom Patches</h3>
+                                    <ul role="list" className="mt-6 space-y-2">
+                                        {navigation.patches.map((item) => (
+                                            <li key={item.name}>
+                                                <Link href={item.href} className="text-sm leading-6 text-white">
+                                                    {item.name}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <h3 className="font-semibold leading-6 text-white mt-10">Services</h3>
                                     <ul role="list" className="mt-6 space-y-2">
                                         {navigation.solutions.map((item) => (
                                             <li key={item.name}>
@@ -96,7 +111,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="border-t border-white/40 pt-5 mt-8 lg:mt-10">
-                        <p className="text-sm leading-5 text-gray-400 text-center">Copyright © All Rights Reserved - 2024</p>
+                        <p className="text-sm leading-5 text-gray-400 text-center">Copyright © {new Date().getFullYear()} Prime Graphics. All Rights Reserved.</p>
                     </div>
                 </div>
             </LayoutWrapper>

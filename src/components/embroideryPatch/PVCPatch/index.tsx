@@ -36,7 +36,7 @@ function PVCPatch() {
                         </div>
                         <div className='flex justify-center w-full md:w-1/2 md:border-l border-[#C5C2C1]'>
                             <div className='w-[70%] lg:w-[60%] overflow-hidden'>
-                                <Image src='/assets/embroideryPatch/pvc/PVC Main image.jpg' width={500} height={500} className='w-full object-contain md:hover:scale-125 transition-all origin-center [transition-duration:300ms]' alt='Custom PVC patch' />
+                                <Image src='/assets/embroideryPatch/pvc/custom-pvc-patches.jpg' width={500} height={500} className='w-full object-contain md:hover:scale-125 transition-all origin-center [transition-duration:300ms]' alt='Custom PVC patch' />
                             </div>
                         </div>
                     </div>

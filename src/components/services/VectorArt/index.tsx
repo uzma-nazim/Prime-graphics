@@ -24,7 +24,7 @@ function VectorArt() {
                 >
                     <div className='flex flex-col-reverse md:flex-row'>
                         <div className='w-full md:w-1/2 text-white md:pr-10 mt-10 md:mt-0'>
-                            <h1 className='text-xl sm:text-2xl lg:text-3xl font-medium'>Vector Embroidery</h1>
+                            <h2 className='text-xl sm:text-2xl lg:text-3xl font-medium'>Vector Embroidery</h2>
                             <p className='text-base lg:text-xl mt-10 tracking-wider'>At Prime Graphics, we&apos;re masters in the craft of creating top-tier vector art. Our seasoned designers excel at crafting vector graphics of unparalleled quality, characterized by their scalability, precision, and adaptability to any application. With meticulous attention to detail, we transform your images into crisp, clean vectors, guaranteeing optimal clarity and versatility for all your projects.</p>
                             <p className='text-base lg:text-xl mt-10 tracking-wider'>Whether you require logo vectorization, intricate illustrations, or raster-to-vector conversions, our vector art services consistently yield exceptional results. Trust us to elevate your visuals with our expertise and commitment to excellence.</p>
                             <div className='flex gap-2 items-center mt-7'>
@@ -35,7 +35,7 @@ function VectorArt() {
                             </div>
                         </div>
                         <div className='flex justify-center w-full md:w-1/2 md:border-l border-[#C5C2C1]'>
-                            <Image src={'/assets/services/vector-art.png'} width={500} height={500} className='w-[70%] lg:w-[55%] object-contain' alt='digitize' />
+                            <Image src={'/assets/services/vector-art.png'} width={500} height={500} className='w-[70%] lg:w-[55%] object-contain' alt='Raster to vector logo conversion example' />
                         </div>
                     </div>
                 </motion.div>

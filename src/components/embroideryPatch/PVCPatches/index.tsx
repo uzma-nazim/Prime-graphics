@@ -10,13 +10,13 @@ import { motion } from 'framer-motion'
 
 function PVCPatches() {
     const images = [
-        '/assets/embroideryPatch/pvc/ChatGPT Image Sep 29, 2026, 04_24_57 AM-Photoroom.png',
-        '/assets/embroideryPatch/pvc/ChatGPT Image Sep 29, 2026, 04_27_28 AM-Photoroom.png',
-        '/assets/embroideryPatch/pvc/ChatGPT Image Sep 29, 2026, 04_30_30 AM-Photoroom.png',
-        '/assets/embroideryPatch/pvc/PVC 1-Photoroom.png',
-        '/assets/embroideryPatch/pvc/PVC 2-Photoroom.png',
-        '/assets/embroideryPatch/pvc/PVC 3-Photoroom.png',
-        '/assets/embroideryPatch/pvc/PVC 4-Photoroom.png',
+        '/assets/embroideryPatch/pvc/custom-pvc-patch-1.png',
+        '/assets/embroideryPatch/pvc/custom-pvc-patch-2.png',
+        '/assets/embroideryPatch/pvc/custom-pvc-patch-3.png',
+        '/assets/embroideryPatch/pvc/custom-pvc-patch-4.png',
+        '/assets/embroideryPatch/pvc/custom-pvc-patch-5.png',
+        '/assets/embroideryPatch/pvc/custom-pvc-patch-6.png',
+        '/assets/embroideryPatch/pvc/custom-pvc-patch-7.png',
     ];
 
     return (

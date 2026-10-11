@@ -70,7 +70,7 @@ function LeatherPatches() {
                                             <div className='absolute bottom-0 left-0 w-full h-full text-white font-bold flex items-end pb-4 px-4 bg-gradient-to-t from-black/70 via-black/40 to-transparent z-50 translate-y-full group-hover:translate-y-0 transition-all [transition-duration:300ms]'>
                                                 Leather Gallery
                                             </div>
-                                            <Image src={image} className='w-[80%] object-contain group-hover:scale-125 transition-all origin-center [transition-duration:300ms]' width={400} height={400} alt='not found' />
+                                            <Image src={image} className='w-[80%] object-contain group-hover:scale-125 transition-all origin-center [transition-duration:300ms]' width={400} height={400} alt='Custom leather patch sample' />
                                         </div>
                                     </div>
                                 </SwiperSlide>
