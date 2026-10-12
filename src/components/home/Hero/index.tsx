@@ -17,7 +17,23 @@ import Marquee from "react-fast-marquee";
 const kaushanScript = Kaushan_Script({ subsets: ["latin"], weight: ["400"] });
 
 function Hero() {
-    let data = [
+    let data: { title: string; text: string; imageAlt: string; imageClass?: string; bullets: string[]; bgImage: string; subSlider: string[] }[] = [
+        {
+            title: 'Custom Patches & Embroidery Digitizing by Prime Graphics',
+            text: 'Embroidered, PVC, leather and sublimation patches made to your design',
+            imageAlt: 'Custom patches made by Prime Graphics',
+            imageClass: 'aspect-square object-cover rounded-full',
+            bullets: [
+                'Free Design Mock-up & Quote',
+                'Sew-on, Iron-on, Velcro & Adhesive Backing',
+                'Any Size and Shape',
+                'Worldwide Shipping'
+            ],
+            bgImage: '/assets/heroslider1.jpg',
+            subSlider: [
+                '/assets/embroideryPatch/pvc/custom-pvc-patches.jpg',
+            ]
+        },
         {
             title: 'Prime Graphics & Embroidery Services',
             text: 'Prime Graphics providing you a web-based digitizing source',
@@ -165,7 +181,7 @@ function Hero() {
                                                                     return (
                                                                         <SwiperSlide key={sub_i} className='flex items-center justify-center !my-auto relative py-10'>
                                                                             <Image src={'/assets/hero-cover.png'} width={500} height={500} className='w-[90%] absolute left-0 top-5' alt='' />
-                                                                            <Image src={image} width={500} height={500} priority={i === 0} sizes='(min-width: 768px) 30vw, 73vw' className='w-[90%] !mx-auto my-5 relative z-30' alt={val.imageAlt} />
+                                                                            <Image src={image} width={500} height={500} priority={i === 0} sizes='(min-width: 768px) 30vw, 73vw' className={`w-[90%] !mx-auto my-5 relative z-30 ${val.imageClass ?? ''}`} alt={val.imageAlt} />
                                                                         </SwiperSlide>
                                                                     )
                                                                 })
