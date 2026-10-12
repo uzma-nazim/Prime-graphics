@@ -96,7 +96,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="border-t border-white/40 pt-5 mt-8 lg:mt-10">
-                        <p className="text-sm leading-5 text-gray-400 text-center">Copyright © All Rights Reserved - 2024</p>
+                        <p className="text-sm leading-5 text-gray-400 text-center">Copyright © All Rights Reserved - {new Date().getFullYear()}</p>
                     </div>
                 </div>
             </LayoutWrapper>

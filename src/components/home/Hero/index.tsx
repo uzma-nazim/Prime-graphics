@@ -79,12 +79,12 @@ function Hero() {
                 <Marquee className='bg-black text-white py-1'>
                     <div className='flex items-center gap-2 mx-24'>
                         <Image src={'/assets/gift.png'} className='w-[30px]' width={50} height={50} alt='' />
-                        We offer a $free trial for your first simple order to showcase our quality and turnaround time.
+                        We offer a free trial for your first simple order to showcase our quality and turnaround time.
                         <Image src={'/assets/gift.png'} className='w-[30px]' width={50} height={50} alt='' />
                     </div>
                     <div className='flex items-center gap-2 mx-24'>
                         <Image src={'/assets/gift.png'} className='w-[30px]' width={50} height={50} alt='' />
-                        We offer a $free trial for your first simple order to showcase our quality and turnaround time.
+                        We offer a free trial for your first simple order to showcase our quality and turnaround time.
                         <Image src={'/assets/gift.png'} className='w-[30px]' width={50} height={50} alt='' />
                     </div>
                 </Marquee>

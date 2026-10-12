@@ -34,7 +34,7 @@ function EmbroideryPatches() {
                         title='Patches Gallery'
                         color='black'
                         text='Each patch in our portfolio is a testament to our dedication to quality.
-                    we offer custom patches tailored to your specific requirements.'
+                    we offer custom embroidered, leather, PVC and sublimation patches tailored to your specific requirements.'
                     />
                 </motion.div>
             </LayoutWrapper>

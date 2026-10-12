@@ -43,7 +43,7 @@ function About() {
                                 viewport={{ once: true }}
                             >
                                 <p className='text-lg md:text-2xl text-white mt-7 sm:mt-14'>
-                                    For years, Prime Graphics has been the trusted name in custom patches, digitizing, and vector art services. Our reputation for quality craftsmanship and personalized designs has established us as industry leaders. With a dedicated team and a commitment to surpassing expectations, we bring your ideas to life with precision and passion. Join our long-standing tradition of excellence and experience the art of customization with us.
+                                    For years, Prime Graphics has been the trusted name in custom patches (embroidered, PVC, leather and sublimation patches), digitizing, and vector art services. Our reputation for quality craftsmanship and personalized designs has established us as industry leaders. With a dedicated team and a commitment to surpassing expectations, we bring your ideas to life with precision and passion. Join our long-standing tradition of excellence and experience the art of customization with us.
                                 </p>
                             </motion.div>
                             <motion.div

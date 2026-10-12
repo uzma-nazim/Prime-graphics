@@ -21,26 +21,24 @@ function Contact() {
                     <Heading title='Contact us' color='black' text='You can connect with us when need help!' />
                 </motion.div>
                 <div className='mt-16 w-full lg:w-[85%] mx-auto'>
-                    <div className='blok sm:flex justify-between gap-5'>
+                    <div className='w-fit lg:w-full mx-auto flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-5'>
                         <motion.div
                             initial={{ opacity: 0, scale: 0 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 1 }}
                             viewport={{ once: true }}
                         >
-                            <div className='w-full sm:w-[400px] flex gap-5 items-center'>
-                                <MapPinned strokeWidth={1} className='flex-shrink-0' size={50} />
+                            <address className='not-italic flex gap-5 items-center'>
+                                <MapPinned strokeWidth={1} className='flex-shrink-0' size={40} />
                                 <div className='flex flex-col gap-2'>
-                                    <h3 className='text-xl font-semibold'>Location 1:</h3>
+                                    <h3 className='text-xl font-semibold'>Location:</h3>
                                     <p className='text-[#8D8888] font-light'>
-                                      
-                                     5 Carlisle St, Soho, <br />
-                                     London W1D 3BJ, <br />
-                                     United Kingdom
-
+                                        5 Carlisle St, Soho, <br />
+                                        London W1D 3BJ, <br />
+                                        United Kingdom
                                     </p>
                                 </div>
-                            </div>
+                            </address>
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0, scale: 0 }}
@@ -48,27 +46,7 @@ function Contact() {
                             transition={{ duration: 1 }}
                             viewport={{ once: true }}
                         >
-                            <div className='w-full sm:w-[400px] flex gap-5 items-center mt-5 sm:mt-0'>
-                                <MapPinned strokeWidth={1} className='flex-shrink-0' size={50} />
-                                <div className='flex flex-col gap-2'>
-                                    <h3 className='text-xl font-semibold'>Location 2:</h3>
-                                    <p className='text-[#8D8888] font-light'>
-                                    5 Carlisle St, Soho, <br />
-                                     London W1D 3BJ, <br />
-                                     United Kingdom
-                                    </p>
-                                </div>
-                            </div>
-                        </motion.div>
-                    </div>
-                    <div className='block md:flex justify-between gap-5 mt-5 sm:mt-10'>
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 1 }}
-                            viewport={{ once: true }}
-                        >
-                            <div className='w-full sm:w-[400px] flex gap-5 items-center'>
+                            <div className='flex gap-5 items-center'>
                                 <Mail strokeWidth={1} className='flex-shrink-0' size={40} />
                                 <div className='flex flex-col gap-2'>
                                     <h3 className='text-xl font-semibold'>Email:</h3>
@@ -82,7 +60,7 @@ function Contact() {
                             transition={{ duration: 1 }}
                             viewport={{ once: true }}
                         >
-                            <div className='w-full sm:w-[400px] flex gap-5 items-center mt-5 sm:mt-0'>
+                            <div className='flex gap-5 items-center'>
                                 <Phone strokeWidth={1} className='flex-shrink-0' size={40} />
                                 <div className='flex flex-col gap-2'>
                                     <h3 className='text-xl font-semibold'>Phone:</h3>
