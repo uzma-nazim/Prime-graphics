@@ -20,22 +20,6 @@ function Hero() {
     let data: { title: string; text: string; imageAlt: string; imageClass?: string; bullets: string[]; bgImage: string; subSlider: string[] }[] = [
         {
             title: 'Custom Patches & Embroidery Digitizing by Prime Graphics',
-            text: 'Embroidered, PVC, leather and sublimation patches made to your design',
-            imageAlt: 'Custom patches made by Prime Graphics',
-            imageClass: 'aspect-square object-cover rounded-full',
-            bullets: [
-                'Free Design Mock-up & Quote',
-                'Sew-on, Iron-on, Velcro & Adhesive Backing',
-                'Any Size and Shape',
-                'Worldwide Shipping'
-            ],
-            bgImage: '/assets/heroslider1.jpg',
-            subSlider: [
-                '/assets/embroideryPatch/pvc/custom-pvc-patches.jpg',
-            ]
-        },
-        {
-            title: 'Prime Graphics & Embroidery Services',
             text: 'Prime Graphics providing you a web-based digitizing source',
             imageAlt: 'Embroidery digitizing sample logo',
             bullets: [

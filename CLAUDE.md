@@ -11,14 +11,13 @@ Goal: rank on Google (UK, USA, worldwide) and be recommended by AI assistants fo
 ## Pages
 The site has three pages only: `/`, `/embroidery-patch` and `/services`.
 Do not add, delete, rename or move pages. All SEO work goes into these existing pages.
-Do not remove existing content (for example the two locations in the contact section, footer icons or text). Add or reword for keywords; never delete.
+Do not remove existing content (for example the two locations in the contact section, footer icons or text). Do not add extra content either: no FAQ sections, no new sections, slides, menu items or footer columns.
+SEO here means rewording existing text for keywords, plus the parts visitors do not see (titles, descriptions, social tags, alt text, JSON-LD, sitemap, robots, llms.txt).
 
 ## Where SEO lives
 - `src/lib/seo.ts`: `pageMetadata()` builds title, description, canonical, Open Graph and Twitter tags. Every page uses it.
-- `src/lib/site.ts`: business facts, home title/description, home FAQs.
-- `src/lib/patches.ts`: FAQs for `/embroidery-patch`.
-- `src/components/seo/JsonLd.tsx`: ProfessionalService, Service, BreadcrumbList, FAQPage.
-- `src/components/common/FaqSection`: visible FAQ plus FAQPage JSON-LD from the same data.
+- `src/lib/site.ts`: business facts, home title/description.
+- `src/components/seo/JsonLd.tsx`: ProfessionalService, Service, BreadcrumbList.
 - `src/app/sitemap.ts`, `src/app/robots.ts`, `public/llms.txt`.
 
 ## Keyword map
@@ -32,8 +31,7 @@ Do not remove existing content (for example the two locations in the contact sec
 - `<title>`: 50–60 characters including "| Prime Graphics" at the end, main keyword first, unique per page.
 - Meta description: 140–160 characters, main keyword + a benefit + a call to action ("Free quote"), unique per page.
 - Canonical, Open Graph and Twitter tags.
-- Keywords in body paragraphs, FAQs, image alt text, link anchor text, JSON-LD, llms.txt, sitemap, robots.
-- H3 question headings inside FAQ sections.
+- Keywords in existing body paragraphs, image alt text, link anchor text, JSON-LD, llms.txt, sitemap, robots.
 
 ## Ask the owner first
 - Visible text on the pages: hero slider titles and subtitles, the main heading at the top of each page, and menu labels. List the suggestion and wait for an OK.
@@ -41,10 +39,10 @@ Do not remove existing content (for example the two locations in the contact sec
 
 ## SEO rules
 - Exactly one H1 per page, then H2 → H3 in order.
-- Keywords used naturally. No stuffing, no hidden text. Use UK and US spellings naturally (digitizing/digitising, colour/color) in body text and FAQs.
+- Keywords used naturally. No stuffing, no hidden text. Use UK and US spellings naturally (digitizing/digitising, colour/color) in body text.
 - Every image has descriptive alt text; decorative images use `alt=""`. File names are descriptive with no spaces.
 - Internal links between related pages use descriptive anchor text ("custom PVC patches", not "click here").
-- JSON-LD: Organization/ProfessionalService, Service, BreadcrumbList, FAQPage. Every FAQ answer must be visible on the page. No star ratings or review schema. Never invent facts.
+- JSON-LD: Organization/ProfessionalService, Service, BreadcrumbList. No FAQPage (the site has no FAQ sections). No star ratings or review schema. Never invent facts.
 - Only these facts: prices $9–12 left chest, $12–50 jacket back, $9–12 raster to vector, $14–50 digital vector; 4-hour turnaround (2-hour rush) for digital files; all backings (sew-on, iron-on, Velcro, adhesive); worldwide shipping; minimum order and patch production time depend on type and size and are confirmed in the quote.
 - Speed: `next/image` with a correct `sizes`; `priority` only on the main above-the-fold image; no layout shift.
 - Important text must be in the server-rendered HTML.

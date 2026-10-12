@@ -112,8 +112,6 @@ function Navbar() {
                                                         <DropdownMenuItem onClick={() => redirect('/embroidery-patch#leather')}>Leather Patches</DropdownMenuItem>
                                                         <DropdownMenuSeparator />
                                                         <DropdownMenuItem onClick={() => redirect('/embroidery-patch#pvc')}>PVC Patches</DropdownMenuItem>
-                                                        <DropdownMenuSeparator />
-                                                        <DropdownMenuItem onClick={() => redirect('/embroidery-patch#sublimation')}>Sublimation Patches</DropdownMenuItem>
                                                     </DropdownMenuContent>
                                                 </DropdownMenu>
                                             </li>
@@ -189,8 +187,6 @@ function Navbar() {
                                                 <Link href='/embroidery-patch#leather' className='block py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Leather Patches</Link>
                                                 <DropdownMenuSeparator className='my-0' />
                                                 <Link href='/embroidery-patch#pvc' className='block py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>PVC Patches</Link>
-                                                <DropdownMenuSeparator className='my-0' />
-                                                <Link href='/embroidery-patch#sublimation' className='block py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Sublimation Patches</Link>
                                             </div>
                                         </HoverCardContent>
                                     </HoverCard>

@@ -11,18 +11,10 @@ const navigation = {
         { name: 'Services', href: '/services' },
         { name: 'Packages', href: '/#packages' },
     ],
-    patches: [
-        { name: 'All Custom Patches', href: '/embroidery-patch' },
-        { name: 'Embroidered Patches', href: '/embroidery-patch#embroidered' },
-        { name: 'PVC Patches', href: '/embroidery-patch#pvc' },
-        { name: 'Leather Patches', href: '/embroidery-patch#leather' },
-        { name: 'Sublimation Patches', href: '/embroidery-patch#sublimation' },
-    ],
     solutions: [
         { name: 'Embroidery Digitizing', href: '/services#digitize' },
         { name: 'Vector Art Conversion', href: '/services#vector' },
         { name: 'Engraving Designs', href: '/services#engraving' },
-        { name: 'FAQ', href: '/#faq' },
     ],
 }
 
@@ -70,17 +62,7 @@ export default function Footer() {
                                     </ul>
                                 </div>
                                 <div className="mt-10 md:mt-0">
-                                    <h3 className="font-semibold leading-6 text-white">Custom Patches</h3>
-                                    <ul role="list" className="mt-6 space-y-2">
-                                        {navigation.patches.map((item) => (
-                                            <li key={item.name}>
-                                                <Link href={item.href} className="text-sm leading-6 text-white">
-                                                    {item.name}
-                                                </Link>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                    <h3 className="font-semibold leading-6 text-white mt-10">Solutions</h3>
+                                    <h3 className="font-semibold leading-6 text-white">Solutions</h3>
                                     <ul role="list" className="mt-6 space-y-2">
                                         {navigation.solutions.map((item) => (
                                             <li key={item.name}>

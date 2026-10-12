@@ -11,17 +11,17 @@ import 'swiper/css';
 const testimonials: { name: string; review: string; videoUrl?: string }[] = [
 
     	{
-		name: 'Ro Nathan',
+		name: 'Ro',
 		review: 'Excellent work every time! Fast turnaround, great communication, and always willing to make adjustments when needed. Highly recommend!',
 		videoUrl: '/assets/review/r1.mp4',
 	},
 	{
-		name: 'Ro Nathan',
+		name: 'Ro',
 		review: 'Great quality work and very quick service. They always pay attention to the details and deliver exactly what I need. Highly recommend!',
 		videoUrl: '/assets/review/r2.mp4',
 	},
 	{
-		name: 'Ro Nathan',
+		name: 'Ro',
 		review: 'Very professional and easy to work with. The vector files always come out clean and ready for production. Great service!',
 		videoUrl: '/assets/review/r3.mp4',
 	},

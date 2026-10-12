@@ -39,7 +39,7 @@ function EmbroideryPatch() {
                             <li>Our embroidery patches are made to last. Constructed with high-quality threads and materials, they withstand regular wear and tear.</li>
                             <li>Elevate your brand or organization with professionally crafted embroidery patches.</li>
                         </ul> */}
-                            <p className='text-base lg:text-xl mt-7 tracking-wider ml-5 sm:ml-12'>Infuse your distinct style and identity into every stitch with our fully customizable embroidery patches. Crafted for longevity, our patches boast durability and resilience, thanks to premium threads and materials. Transform your brand or organization with our expertly crafted embroidery patches, designed to elevate your presence with professionalism and flair.</p>
+                            <p className='text-base lg:text-xl mt-7 tracking-wider ml-5 sm:ml-12'>Infuse your distinct style and identity into every stitch with our custom embroidered patches. Crafted for longevity, our patches boast durability and resilience, thanks to premium threads and materials. Transform your brand or organization with our expertly crafted custom patches, designed to elevate your presence with professionalism and flair.</p>
                             <div className='flex justify-center mt-7'>
                                 <OrderNowLink>
                                     <button className='py-2 px-4 border-2 border-dark-primary rounded-xl text-sm font-bold text-white bg-dark-primary shadow-lg'>Get Quote</button>

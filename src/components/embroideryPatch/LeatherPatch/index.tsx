@@ -32,7 +32,7 @@ function LeatherPatch() {
                             <li>Renowned for its durability, leather patches are built to withstand the test of time.</li>
                             <li>Leather patches serve as a powerful branding tool, allowing you to showcase your logo, in a stylish way.</li>
                         </ul> */}
-                            <p className='text-base lg:text-xl mt-7 tracking-wider ml-5 sm:ml-12'>Enhance the elegance and endurance of your garments and accessories with our bespoke leather patches service. Famed for their durability, leather patches are crafted to endure the trials of time. Embrace the power of branding with our leather patches, offering a stylish platform to showcase your logo with sophistication and flair.</p>
+                            <p className='text-base lg:text-xl mt-7 tracking-wider ml-5 sm:ml-12'>Enhance the elegance and endurance of your garments and accessories with our custom leather patches service. Famed for their durability, leather patches are crafted to endure the trials of time. Embrace the power of branding with our leather patches, offering a stylish platform to showcase your logo with sophistication and flair.</p>
                             <div className='flex justify-center mt-7'>
                                 <OrderNowLink>
                                     <button className='py-2 px-4 border-2 border-dark-primary rounded-xl text-sm font-bold text-white bg-dark-primary shadow-lg'>Get Quote</button>

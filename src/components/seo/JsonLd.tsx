@@ -1,4 +1,4 @@
-import { SITE_URL, business, packages, type Faq } from '@/lib/site';
+import { SITE_URL, business, packages } from '@/lib/site';
 
 // Renders schema.org structured data so Google, Bing and AI assistants
 // (ChatGPT, Claude, Perplexity, Gemini) can read who we are, what we sell and for how much.
@@ -87,22 +87,6 @@ export function OrganizationJsonLd() {
             <Script data={org} />
             <Script data={website} />
         </>
-    );
-}
-
-export function FaqJsonLd({ faqs }: { faqs: Faq[] }) {
-    return (
-        <Script
-            data={{
-                '@context': 'https://schema.org',
-                '@type': 'FAQPage',
-                mainEntity: faqs.map((f) => ({
-                    '@type': 'Question',
-                    name: f.q,
-                    acceptedAnswer: { '@type': 'Answer', text: f.a },
-                })),
-            }}
-        />
     );
 }
 
