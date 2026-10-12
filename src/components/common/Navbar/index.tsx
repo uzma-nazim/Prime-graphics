@@ -95,11 +95,11 @@ function Navbar() {
                                                 <DropdownMenu modal={false}>
                                                     <DropdownMenuTrigger className='flex items-center gap-2'>SERVICES <ChevronDown size={20} strokeWidth={1} /></DropdownMenuTrigger>
                                                     <DropdownMenuContent className='text-[#8D8888] font-[500]'>
-                                                        <DropdownMenuItem onClick={() => redirect('/embroidery-digitizing')}>Digitizing</DropdownMenuItem>
+                                                        <DropdownMenuItem onClick={() => redirect('/services#digitize')}>Digitizing</DropdownMenuItem>
                                                         <DropdownMenuSeparator />
-                                                        <DropdownMenuItem onClick={() => redirect('/vector-art-conversion')}>Vector</DropdownMenuItem>
+                                                        <DropdownMenuItem onClick={() => redirect('/services#vector')}>Vector</DropdownMenuItem>
                                                         <DropdownMenuSeparator />
-                                                        <DropdownMenuItem onClick={() => redirect('/services/#engraving')}>Engraving Designs</DropdownMenuItem>
+                                                        <DropdownMenuItem onClick={() => redirect('/services#engraving')}>Engraving Designs</DropdownMenuItem>
                                                     </DropdownMenuContent>
                                                 </DropdownMenu>
                                             </li>
@@ -107,13 +107,13 @@ function Navbar() {
                                                 <DropdownMenu modal={false}>
                                                     <DropdownMenuTrigger className='flex items-center gap-2'>PATCH GALLERY <ChevronDown size={20} strokeWidth={1} /></DropdownMenuTrigger>
                                                     <DropdownMenuContent className='text-[#8D8888] font-[500]'>
-                                                        <DropdownMenuItem onClick={() => redirect('/custom-embroidered-patches')}>Embroidered Patches</DropdownMenuItem>
+                                                        <DropdownMenuItem onClick={() => redirect('/custom-patches#embroidered')}>Embroidered Patches</DropdownMenuItem>
                                                         <DropdownMenuSeparator />
-                                                        <DropdownMenuItem onClick={() => redirect('/custom-leather-patches')}>Leather Patches</DropdownMenuItem>
+                                                        <DropdownMenuItem onClick={() => redirect('/custom-patches#leather')}>Leather Patches</DropdownMenuItem>
                                                         <DropdownMenuSeparator />
-                                                        <DropdownMenuItem onClick={() => redirect('/custom-pvc-patches')}>PVC Patches</DropdownMenuItem>
+                                                        <DropdownMenuItem onClick={() => redirect('/custom-patches#pvc')}>PVC Patches</DropdownMenuItem>
                                                         <DropdownMenuSeparator />
-                                                        <DropdownMenuItem onClick={() => redirect('/custom-sublimation-patches')}>Sublimation Patches</DropdownMenuItem>
+                                                        <DropdownMenuItem onClick={() => redirect('/custom-patches#sublimation')}>Sublimation Patches</DropdownMenuItem>
                                                     </DropdownMenuContent>
                                                 </DropdownMenu>
                                             </li>
@@ -144,9 +144,9 @@ function Navbar() {
                                         </HoverCardTrigger>
                                         <HoverCardContent className='!p-1 !w-fit mt-3 !z-[100] text-[#8D8888]'>
                                             <div className='flex flex-col'>
-                                                <Link href='/embroidery-digitizing' className='block py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Digitizing</Link>
+                                                <Link href='/services#digitize' className='block py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Digitizing</Link>
                                                 <DropdownMenuSeparator className='my-0' />
-                                                <Link href='/vector-art-conversion' className='block py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Vector</Link>
+                                                <Link href='/services#vector' className='block py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Vector</Link>
                                                 <DropdownMenuSeparator className='my-0' />
                                                 <Link href='/services#engraving' className='block py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Engraving Designs</Link>
                                             </div>
@@ -167,7 +167,7 @@ function Navbar() {
                                                 Vector
                                             </DropdownMenuItem>
                                             <DropdownMenuSeparator />
-                                            <DropdownMenuItem className='cursor-pointer h-10 hover:!bg-black hover:!text-white transition-all [transition-duration:400ms]' onClick={() => simple_redirect('/services/#engraving')}>
+                                            <DropdownMenuItem className='cursor-pointer h-10 hover:!bg-black hover:!text-white transition-all [transition-duration:400ms]' onClick={() => simple_redirect('/services#engraving')}>
                                                 Engraving Designs
                                             </DropdownMenuItem>
                                         </DropdownMenuContent>
@@ -184,13 +184,13 @@ function Navbar() {
 
                                         <HoverCardContent className='!p-1 !w-fit mt-3 !z-[100] text-[#8D8888]'>
                                             <div className='flex flex-col'>
-                                                <Link href='/custom-embroidered-patches' className='block py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Embroidered Patches</Link>
+                                                <Link href='/custom-patches#embroidered' className='block py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Embroidered Patches</Link>
                                                 <DropdownMenuSeparator className='my-0' />
-                                                <Link href='/custom-leather-patches' className='block py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Leather Patches</Link>
+                                                <Link href='/custom-patches#leather' className='block py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Leather Patches</Link>
                                                 <DropdownMenuSeparator className='my-0' />
-                                                <Link href='/custom-pvc-patches' className='block py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>PVC Patches</Link>
+                                                <Link href='/custom-patches#pvc' className='block py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>PVC Patches</Link>
                                                 <DropdownMenuSeparator className='my-0' />
-                                                <Link href='/custom-sublimation-patches' className='block py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Sublimation Patches</Link>
+                                                <Link href='/custom-patches#sublimation' className='block py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Sublimation Patches</Link>
                                             </div>
                                         </HoverCardContent>
                                     </HoverCard>

@@ -44,7 +44,7 @@ export const homeFaqs: Faq[] = [
     {
         q: 'How much does embroidery digitizing cost?',
         a: 'Left chest logo digitizing costs $9–12 and jacket back designs cost $12–50, depending on size and stitch count. Raster to vector conversion is $9–12 and digital vector art is $14–50. Small edits and revisions are free, and bulk orders get a discount.',
-        link: { href: '/embroidery-digitizing', text: 'Embroidery digitizing services and prices' },
+        link: { href: '/services', text: 'Embroidery digitizing services' },
     },
     {
         q: 'How fast is your turnaround on digitizing and vector files?',
@@ -69,12 +69,12 @@ export const homeFaqs: Faq[] = [
     {
         q: 'Do you make custom embroidered patches and custom PVC patches?',
         a: 'Yes. Custom embroidered patches give a classic stitched look, and custom PVC patches (rubber patches) give bold 2D or 3D detail that is flexible and waterproof. We also make custom leather patches and full-colour sublimation patches. Minimum order and production time depend on the patch type and size and are confirmed in your quote.',
-        link: { href: '/custom-embroidered-patches', text: 'Custom embroidered patches' },
+        link: { href: '/custom-patches#embroidered', text: 'Custom embroidered patches' },
     },
     {
         q: 'Can you vectorise my logo?',
         a: 'Yes. We vectorise (vectorize) logos by hand rather than auto-tracing them. Raster to vector conversion costs $9–12 and digital vector art costs $14–50, with a turnaround of about 4 hours.',
-        link: { href: '/vector-art-conversion', text: 'Vector art services' },
+        link: { href: '/services#vector', text: 'Vector art services' },
     },
     {
         q: 'What is embroidery digitizing?',

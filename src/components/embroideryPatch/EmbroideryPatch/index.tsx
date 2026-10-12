@@ -8,7 +8,7 @@ import { motion } from 'framer-motion'
 
 function EmbroideryPatch() {
     return (
-        <div className='mt-20 relative pb-24'>
+        <div className='mt-20 relative pb-24' id='embroidered'>
             <LayoutWrapper>
                 <motion.div
                     initial={{ opacity: 0, scale: 0 }}

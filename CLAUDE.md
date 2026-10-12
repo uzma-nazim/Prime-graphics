@@ -8,36 +8,34 @@ Goal: rank on Google (UK, USA, worldwide) and be recommended by AI assistants fo
 ## Commands
 - `yarn install`, `yarn build`, `yarn start` (Node 24). Do not push until the owner says "push".
 
+## Pages
+The site has three pages only: `/`, `/custom-patches` (the old `/embroidery-patch`, which redirects to it) and `/services`.
+Do not add new pages. All SEO work goes into these existing pages.
+
 ## Where SEO lives
 - `src/lib/seo.ts`: `pageMetadata()` builds title, description, canonical, Open Graph and Twitter tags. Every page uses it.
 - `src/lib/site.ts`: business facts, home title/description, home FAQs.
-- `src/lib/patches.ts`: content, titles, descriptions and FAQs for the four patch type pages.
+- `src/lib/patches.ts`: FAQs for `/custom-patches`.
 - `src/components/seo/JsonLd.tsx`: ProfessionalService, Service, BreadcrumbList, FAQPage.
 - `src/components/common/FaqSection`: visible FAQ plus FAQPage JSON-LD from the same data.
 - `src/app/sitemap.ts`, `src/app/robots.ts`, `public/llms.txt`.
 
-## Keyword map (one main keyword per page)
+## Keyword map
 | Page | Main keyword | Secondary |
 |---|---|---|
 | `/` | custom patches + brand "Prime Graphics" | custom embroidered patches, embroidery digitizing |
-| `/custom-patches` | custom patches | custom patches for hats, custom iron on patches, custom velcro patches, custom patches for jackets, custom patches UK |
-| `/custom-embroidered-patches` | custom embroidered patches | embroidery custom patches, embroidered patches for hats |
-| `/custom-pvc-patches` | custom PVC patches | rubber patches, PVC patches for hats, custom rubber patches |
-| `/custom-leather-patches` | custom leather patches | leather patches for hats, custom leather hat patches |
-| `/custom-sublimation-patches` | custom sublimation patches | printed patches, full colour patches |
-| `/embroidery-digitizing` | embroidery digitizing services | embroidery digitising, embroidery digitizing service UK, logo digitizing, cap digitizing, 3D puff digitizing, DST file |
-| `/vector-art-conversion` | vector art services | vectorise logo, vectorize logo, raster to vector conversion |
-| `/services` | digitizing, vector art and engraving design services | |
+| `/custom-patches` | custom patches | custom embroidered patches, custom PVC patches (rubber patches), custom leather patches, custom sublimation patches (printed patches), custom patches for hats, custom iron on patches, custom velcro patches, custom patches for jackets, custom patches UK |
+| `/services` | embroidery digitizing services | embroidery digitising, embroidery digitizing service UK, logo digitizing, cap digitizing, 3D puff digitizing, DST file, vector art services, vectorise logo, vectorize logo, raster to vector conversion, laser engraving designs |
 
 ## You may change
 - `<title>`: 50–60 characters including "| Prime Graphics" at the end, main keyword first, unique per page.
 - Meta description: 140–160 characters, main keyword + a benefit + a call to action ("Free quote"), unique per page.
 - Canonical, Open Graph and Twitter tags.
 - Keywords in body paragraphs, FAQs, image alt text, link anchor text, JSON-LD, llms.txt, sitemap, robots.
-- H2/H3 headings inside the new pages (the four patch type pages, `/embroidery-digitizing`, `/vector-art-conversion`) and inside FAQ sections.
+- H3 question headings inside FAQ sections.
 
 ## Ask the owner first
-- Visible text on the existing pages (`/`, `/custom-patches`, `/services`): hero slider titles and subtitles, the main heading at the top of each page, and menu labels. List the suggestion and wait for an OK.
+- Visible text on the pages: hero slider titles and subtitles, the main heading at the top of each page, and menu labels. List the suggestion and wait for an OK.
 - Email (primeservice903@gmail.com), phone, address, prices, or the site's design and layout.
 
 ## SEO rules

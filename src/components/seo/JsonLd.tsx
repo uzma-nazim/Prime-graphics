@@ -106,10 +106,11 @@ export function FaqJsonLd({ faqs }: { faqs: Faq[] }) {
     );
 }
 
-export function ServiceJsonLd({ name, description, path, serviceType, image, minPrice, maxPrice }: {
+export function ServiceJsonLd({ name, description, path, anchor, serviceType, image, minPrice, maxPrice }: {
     name: string;
     description: string;
     path: string;
+    anchor?: string; // id of the page section, when one page describes several services
     serviceType?: string;
     image?: string;
     minPrice?: number;
@@ -120,10 +121,10 @@ export function ServiceJsonLd({ name, description, path, serviceType, image, min
             data={{
                 '@context': 'https://schema.org',
                 '@type': 'Service',
-                '@id': `${SITE_URL}${path}#service`,
+                '@id': `${SITE_URL}${path}#service${anchor ? `-${anchor}` : ''}`,
                 name,
                 description,
-                url: `${SITE_URL}${path}`,
+                url: `${SITE_URL}${path}${anchor ? `#${anchor}` : ''}`,
                 ...(serviceType ? { serviceType } : {}),
                 ...(image ? { image: `${SITE_URL}${image}` } : {}),
                 provider: { '@id': `${SITE_URL}/#business` },
