@@ -54,7 +54,10 @@ const CircularBar: React.FC<CircularProgressBarProps> = ({ size, strokeWidth, pe
                 />
             </svg>
             <div className="absolute text-2xl font-bold">
-                <CountUp end={count} duration={2} useEasing={false} enableScrollSpy scrollSpyOnce />{letter}
+                <span className="sr-only">{count}{letter}</span>
+                <span aria-hidden="true">
+                    {inView ? <CountUp end={count} duration={2} useEasing={false} /> : count}{letter}
+                </span>
                 {/* {animationProps.value.to((v: number) => `${Math.round(v)}%`)} */}
             </div>
         </div>

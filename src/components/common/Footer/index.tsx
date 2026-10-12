@@ -12,9 +12,9 @@ const navigation = {
         { name: 'Packages', href: '/#packages' },
     ],
     solutions: [
-        { name: 'Digitizing', href: '/services/#digitizing' },
-        { name: 'Vector', href: '/services/#vector' },
-        { name: 'Embroidery', href: '/services/#engraving' },
+        { name: 'Embroidery Digitizing', href: '/services#digitize' },
+        { name: 'Vector Art Conversion', href: '/services#vector' },
+        { name: 'Engraving Designs', href: '/services#engraving' },
     ],
 }
 
@@ -33,7 +33,7 @@ export default function Footer() {
                                 src="/assets/logo.png"
                                 width={200}
                                 height={200}
-                                alt="Company name"
+                                alt="Prime Graphics logo"
                             />
                             <p className="leading-6 mt-2 text-white">
                                 Prime Graphics
@@ -41,9 +41,9 @@ export default function Footer() {
                             <div className="flex flex-col gap-4 mt-10">
                                 <p className="font-semibold text-white">Follow Us:</p>
                                 <div className='flex gap-3 text-white'>
-                                    <Twitter size={20} strokeWidth={1} />
-                                    <Link href='https://www.facebook.com/profile.php?id=100083557743100' target='_blank' ><Facebook size={20} strokeWidth={1} /></Link>
-                                    <Link href='https://www.instagram.com/prime_graphics269' target='_blank' ><Instagram size={20} strokeWidth={1} /></Link>
+                                    <Twitter size={20} strokeWidth={1} aria-hidden='true' />
+                                    <Link href='https://www.facebook.com/profile.php?id=100083557743100' target='_blank' aria-label='Prime Graphics on Facebook'><Facebook size={20} strokeWidth={1} aria-hidden='true' /></Link>
+                                    <Link href='https://www.instagram.com/prime_graphics269' target='_blank' aria-label='Prime Graphics on Instagram'><Instagram size={20} strokeWidth={1} aria-hidden='true' /></Link>
                                 </div>
                             </div>
                         </div>
@@ -96,7 +96,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="border-t border-white/40 pt-5 mt-8 lg:mt-10">
-                        <p className="text-sm leading-5 text-gray-400 text-center">Copyright © All Rights Reserved - 2024</p>
+                        <p className="text-sm leading-5 text-gray-400 text-center">Copyright © All Rights Reserved - {new Date().getFullYear()}</p>
                     </div>
                 </div>
             </LayoutWrapper>

@@ -10,13 +10,13 @@ import { motion } from 'framer-motion'
 
 function PVCPatches() {
     const images = [
-        '/assets/embroideryPatch/pvc/ChatGPT Image Sep 29, 2026, 04_24_57 AM-Photoroom.png',
-        '/assets/embroideryPatch/pvc/ChatGPT Image Sep 29, 2026, 04_27_28 AM-Photoroom.png',
-        '/assets/embroideryPatch/pvc/ChatGPT Image Sep 29, 2026, 04_30_30 AM-Photoroom.png',
-        '/assets/embroideryPatch/pvc/PVC 1-Photoroom.png',
-        '/assets/embroideryPatch/pvc/PVC 2-Photoroom.png',
-        '/assets/embroideryPatch/pvc/PVC 3-Photoroom.png',
-        '/assets/embroideryPatch/pvc/PVC 4-Photoroom.png',
+        '/assets/embroideryPatch/pvc/custom-pvc-patch-1.png',
+        '/assets/embroideryPatch/pvc/custom-pvc-patch-2.png',
+        '/assets/embroideryPatch/pvc/custom-pvc-patch-3.png',
+        '/assets/embroideryPatch/pvc/custom-pvc-patch-4.png',
+        '/assets/embroideryPatch/pvc/custom-pvc-patch-5.png',
+        '/assets/embroideryPatch/pvc/custom-pvc-patch-6.png',
+        '/assets/embroideryPatch/pvc/custom-pvc-patch-7.png',
     ];
 
     return (
@@ -48,7 +48,7 @@ function PVCPatches() {
                         1024: { slidesPerView: 6, spaceBetween: 40 },
                     }}
                 >
-                    {images.map((image) => (
+                    {images.map((image, i) => (
                         <SwiperSlide key={image}>
                             <div className='relative flex justify-center items-center rounded-2xl sm:rounded-3xl overflow-hidden'>
                                 <Image src='/assets/border.png' className='w-full' width={500} height={500} alt='' />
@@ -56,7 +56,7 @@ function PVCPatches() {
                                     <div className='absolute bottom-0 left-0 w-full h-full text-white font-bold flex items-end pb-4 px-4 bg-gradient-to-t from-black/70 via-black/40 to-transparent z-50 translate-y-full group-hover:translate-y-0 transition-all [transition-duration:300ms]'>
                                         PVC Patch Gallery
                                     </div>
-                                    <Image src={image} className='w-[80%] object-contain group-hover:scale-125 transition-all origin-center [transition-duration:300ms]' width={400} height={400} alt='Custom PVC patch' />
+                                    <Image src={image} className='w-[80%] object-contain group-hover:scale-125 transition-all origin-center [transition-duration:300ms]' width={400} height={400} alt={`Custom PVC patch example ${i + 1}`} />
                                 </div>
                             </div>
                         </SwiperSlide>

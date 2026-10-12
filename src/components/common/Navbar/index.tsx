@@ -72,7 +72,7 @@ function Navbar() {
                         <Link href={'/'}>
                 
                         <div className='flex gap-3 items-center'>
-                            <Image src={'/assets/logo.png'} width={100} height={100} className='w-[55px] md:w-[70px]' alt='logo' />
+                            <Image src={'/assets/logo.png'} width={100} height={100} className='w-[55px] md:w-[70px]' alt='Prime Graphics logo' />
                             <p className={`hidden sm:block font-bold `}>Prime Graphics</p>
                         </div>
                         </Link>
@@ -95,11 +95,11 @@ function Navbar() {
                                                 <DropdownMenu modal={false}>
                                                     <DropdownMenuTrigger className='flex items-center gap-2'>SERVICES <ChevronDown size={20} strokeWidth={1} /></DropdownMenuTrigger>
                                                     <DropdownMenuContent className='text-[#8D8888] font-[500]'>
-                                                        <DropdownMenuItem onClick={() => redirect('/services/#digitize')}>Digitizing</DropdownMenuItem>
+                                                        <DropdownMenuItem onClick={() => redirect('/services#digitize')}>Digitizing</DropdownMenuItem>
                                                         <DropdownMenuSeparator />
-                                                        <DropdownMenuItem onClick={() => redirect('/services/#vector')}>Vector</DropdownMenuItem>
+                                                        <DropdownMenuItem onClick={() => redirect('/services#vector')}>Vector</DropdownMenuItem>
                                                         <DropdownMenuSeparator />
-                                                        <DropdownMenuItem onClick={() => redirect('/services/#engraving')}>Engraving Designs</DropdownMenuItem>
+                                                        <DropdownMenuItem onClick={() => redirect('/services#engraving')}>Engraving Designs</DropdownMenuItem>
                                                     </DropdownMenuContent>
                                                 </DropdownMenu>
                                             </li>
@@ -107,17 +107,17 @@ function Navbar() {
                                                 <DropdownMenu modal={false}>
                                                     <DropdownMenuTrigger className='flex items-center gap-2'>PATCH GALLERY <ChevronDown size={20} strokeWidth={1} /></DropdownMenuTrigger>
                                                     <DropdownMenuContent className='text-[#8D8888] font-[500]'>
-                                                        <DropdownMenuItem onClick={() => redirect('/embroidery-patch')}>Embroidery Patches</DropdownMenuItem>
+                                                        <DropdownMenuItem onClick={() => redirect('/embroidery-patch#embroidered')}>Embroidered Patches</DropdownMenuItem>
                                                         <DropdownMenuSeparator />
-                                                        <DropdownMenuItem onClick={() => redirect('/embroidery-patch/#leather')}>Leather Patches</DropdownMenuItem>
+                                                        <DropdownMenuItem onClick={() => redirect('/embroidery-patch#leather')}>Leather Patches</DropdownMenuItem>
                                                         <DropdownMenuSeparator />
-                                                        <DropdownMenuItem onClick={() => redirect('/embroidery-patch/#pvc')}>PVC Patches</DropdownMenuItem>
+                                                        <DropdownMenuItem onClick={() => redirect('/embroidery-patch#pvc')}>PVC Patches</DropdownMenuItem>
                                                     </DropdownMenuContent>
                                                 </DropdownMenu>
                                             </li>
                                             <Link href={'/#contact'}><li>CONTACT US</li></Link>
                                             <Link href={'/#packages'}><li>OUR PACKAGES</li></Link>
-                                            <Link href={'/embroidery-patch'}><li>EMBROIDERY PATCHES</li></Link>
+                                            <Link href={'/embroidery-patch'}><li>CUSTOM PATCHES</li></Link>
                                         </ul>
                                         <OrderNowLink>
                                             <button className='text-sm py-2 px-5 bg-black text-dark-primary font-bold rounded-md'>Get Quote</button>
@@ -142,11 +142,11 @@ function Navbar() {
                                         </HoverCardTrigger>
                                         <HoverCardContent className='!p-1 !w-fit mt-3 !z-[100] text-[#8D8888]'>
                                             <div className='flex flex-col'>
-                                                <span onClick={() => simple_redirect('/services/#digitize')} className='cursor-pointer py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Digitizing</span>
+                                                <Link href='/services#digitize' className='block py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Digitizing</Link>
                                                 <DropdownMenuSeparator className='my-0' />
-                                                <span onClick={() => simple_redirect('/services/#vector')} className='cursor-pointer py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Vector</span>
+                                                <Link href='/services#vector' className='block py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Vector</Link>
                                                 <DropdownMenuSeparator className='my-0' />
-                                                <span onClick={() => simple_redirect('/services/#engraving')} className='cursor-pointer py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Engraving Designs</span>
+                                                <Link href='/services#engraving' className='block py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Engraving Designs</Link>
                                             </div>
                                         </HoverCardContent>
                                     </HoverCard>
@@ -165,7 +165,7 @@ function Navbar() {
                                                 Vector
                                             </DropdownMenuItem>
                                             <DropdownMenuSeparator />
-                                            <DropdownMenuItem className='cursor-pointer h-10 hover:!bg-black hover:!text-white transition-all [transition-duration:400ms]' onClick={() => simple_redirect('/services/#engraving')}>
+                                            <DropdownMenuItem className='cursor-pointer h-10 hover:!bg-black hover:!text-white transition-all [transition-duration:400ms]' onClick={() => simple_redirect('/services#engraving')}>
                                                 Engraving Designs
                                             </DropdownMenuItem>
                                         </DropdownMenuContent>
@@ -182,12 +182,11 @@ function Navbar() {
 
                                         <HoverCardContent className='!p-1 !w-fit mt-3 !z-[100] text-[#8D8888]'>
                                             <div className='flex flex-col'>
-                                                <span onClick={() => simple_redirect('/embroidery-patch')} className='cursor-pointer py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Embroidery Patches</span>
+                                                <Link href='/embroidery-patch#embroidered' className='block py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Embroidered Patches</Link>
                                                 <DropdownMenuSeparator className='my-0' />
-                                                <span onClick={() => simple_redirect('/embroidery-patch/#leather')} className='cursor-pointer py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Leather Patches</span>
-                                                  <DropdownMenuSeparator className='my-0' />
-                                                <span onClick={() => simple_redirect('/embroidery-patch/#pvc')} className='cursor-pointer py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>PVC Patches</span>
-                                                
+                                                <Link href='/embroidery-patch#leather' className='block py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>Leather Patches</Link>
+                                                <DropdownMenuSeparator className='my-0' />
+                                                <Link href='/embroidery-patch#pvc' className='block py-2 px-3 h-10 hover:!bg-black hover:!text-dark-primary transition-all [transition-duration:400ms]'>PVC Patches</Link>
                                             </div>
                                         </HoverCardContent>
                                     </HoverCard>
@@ -209,7 +208,7 @@ function Navbar() {
                                 </li>
                                 <Link href={'/#contact'}><li><UnderLine text='CONTACT US' /></li></Link>
                                 <Link href={'/#packages'}><li><UnderLine text='OUR PACKAGES' /></li></Link>
-                                <Link href={'/embroidery-patch'}><li><UnderLine text='EMBROIDERY PATCHES' /></li></Link>
+                                <Link href={'/embroidery-patch'}><li><UnderLine text='CUSTOM PATCHES' /></li></Link>
                             </ul>
                             <OrderNowLink>
                                 <button className='text-sm py-2 px-5 bg-black text-dark-primary font-bold rounded-md'>Get Quote</button>

@@ -92,7 +92,7 @@ function Packages() {
                                             <h3 className='text-xl text-[#6D6D6D] font-bold h-[45px]'>{val.packageName}</h3>
                                             <div className='flex justify-center gap-1'>
                                                 <span className='text-xs font-semibold mt-4'>$</span>
-                                                <h2 className='text-[28px] font-medium text-center mt-3'>{val.price}</h2>
+                                                <p className='text-[28px] font-medium text-center mt-3'>{val.price}</p>
                                             </div>
                                         </div>
                                         <ul className='flex flex-col gap-1 mt-5 border-t border-[#CCC3C3] py-8'>

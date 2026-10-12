@@ -16,7 +16,7 @@ function About() {
                             transition={{ duration: 1 }}
                             viewport={{ once: true }}
                         >
-                            <Image src={'/assets/about.png'} width={700} height={700} className='w-full' alt='about' />
+                            <Image src={'/assets/about.png'} width={700} height={700} sizes='(min-width: 1024px) 41vw, 90vw' className='w-full' alt='Prime Graphics custom patches, embroidery digitizing and vector art work' />
                         </motion.div>
                     </div>
                     <div className='w-full lg:w-[45%]'>
@@ -43,7 +43,7 @@ function About() {
                                 viewport={{ once: true }}
                             >
                                 <p className='text-lg md:text-2xl text-white mt-7 sm:mt-14'>
-                                    For years, Prime Graphics has been the trusted name in custom patches, digitizing, and vector art services. Our reputation for quality craftsmanship and personalized designs has established us as industry leaders. With a dedicated team and a commitment to surpassing expectations, we bring your ideas to life with precision and passion. Join our long-standing tradition of excellence and experience the art of customization with us.
+                                    For years, Prime Graphics has been the trusted name in custom patches (embroidered, PVC, leather and sublimation patches), digitizing, and vector art services. Our reputation for quality craftsmanship and personalized designs has established us as industry leaders. With a dedicated team and a commitment to surpassing expectations, we bring your ideas to life with precision and passion. Join our long-standing tradition of excellence and experience the art of customization with us.
                                 </p>
                             </motion.div>
                             <motion.div
@@ -55,12 +55,12 @@ function About() {
 
                                 <div className='flex mt-20 justify-center lg:justify-start'>
                                     <div className='pr-7 sm:pr-12 py-2'>
-                                        <h2 className='text-3xl md:text-[40px] font-bold text-white leading-tight'>1000+</h2>
+                                        <p className='text-3xl md:text-[40px] font-bold text-white leading-tight'>1000+</p>
                                         <p className='text-lg md:text-2xl text-white'>Projects</p>
                                     </div>
                                     <div className='w-[1px] bg-[#9C9C9C] flex-shrink-0'></div>
                                     <div className='pl-7 sm:pl-12 py-2'>
-                                        <h2 className='text-3xl md:text-[40px] font-bold text-white leading-tight'>99.9%</h2>
+                                        <p className='text-3xl md:text-[40px] font-bold text-white leading-tight'>99.9%</p>
                                         <p className='text-lg md:text-2xl text-white'>Perfection</p>
                                     </div>
                                 </div>

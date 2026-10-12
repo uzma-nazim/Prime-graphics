@@ -11,15 +11,15 @@ import { motion } from 'framer-motion'
 
 function EmbroideryPatches() {
     let images = [
-        '/assets/embroideryPatch/patches/1.png',
-        // '/assets/embroideryPatch/patches/2.png',
-        '/assets/embroideryPatch/patches/3.png',
-        '/assets/embroideryPatch/patches/4.png',
-        '/assets/embroideryPatch/patches/5.png',
-        '/assets/embroideryPatch/patches/6.png',
-        '/assets/embroideryPatch/patches/7.png',
-        '/assets/embroideryPatch/patches/8.png',
-        // '/assets/embroideryPatch/patches/9.png',
+        '/assets/embroideryPatch/patches/custom-embroidered-patch-1.png',
+        // '/assets/embroideryPatch/patches/custom-embroidered-patch-2.png',
+        '/assets/embroideryPatch/patches/custom-embroidered-patch-3.png',
+        '/assets/embroideryPatch/patches/custom-embroidered-patch-4.png',
+        '/assets/embroideryPatch/patches/custom-embroidered-patch-5.png',
+        '/assets/embroideryPatch/patches/custom-embroidered-patch-6.png',
+        '/assets/embroideryPatch/patches/custom-embroidered-patch-7.png',
+        '/assets/embroideryPatch/patches/custom-embroidered-patch-8.png',
+        // '/assets/embroideryPatch/patches/custom-embroidered-patch-9.png',
     ]
     return (
         <div>
@@ -34,7 +34,7 @@ function EmbroideryPatches() {
                         title='Patches Gallery'
                         color='black'
                         text='Each patch in our portfolio is a testament to our dedication to quality.
-                    we offer custom designs tailored to your specific requirements.'
+                    we offer custom embroidered, leather, PVC and sublimation patches tailored to your specific requirements.'
                     />
                 </motion.div>
             </LayoutWrapper>
@@ -75,7 +75,7 @@ function EmbroideryPatches() {
                                             <div className='absolute bottom-0 left-0 w-full h-full text-white font-bold flex items-end pb-4 px-4 bg-gradient-to-t from-black/70 via-black/40 to-transparent z-50 translate-y-full group-hover:translate-y-0 transition-all [transition-duration:300ms]'>
                                                 Patches Gallery
                                             </div>
-                                            <Image src={image} className='w-[80%] object-contain group-hover:scale-125 transition-all origin-center [transition-duration:300ms]' width={400} height={400} alt='not found' />
+                                            <Image src={image} className='w-[80%] object-contain group-hover:scale-125 transition-all origin-center [transition-duration:300ms]' width={400} height={400} alt={`Custom embroidered patch example ${i + 1}`} />
                                         </div>
                                     </div>
                                 </SwiperSlide>

@@ -17,26 +17,26 @@ const kaushanScript = Kaushan_Script({ subsets: ["latin"], weight: ["400"] });
 
 function Portfolio() {
     // let data = [
-    //     '/assets/portfolio1.png',
-    //     '/assets/portfolio2.png',
-    //     '/assets/portfolio3.png',
-    //     '/assets/portfolio4.png',
-    //     '/assets/portfolio5.png',
-    //     '/assets/portfolio6.png',
+    //     '/assets/embroidery-digitizing-sample-1.png',
+    //     '/assets/embroidery-digitizing-sample-2.png',
+    //     '/assets/embroidery-digitizing-sample-3.png',
+    //     '/assets/embroidery-digitizing-sample-4.png',
+    //     '/assets/embroidery-digitizing-sample-5.png',
+    //     '/assets/embroidery-digitizing-sample-6.png',
     //     '/assets/portfolio7.jpg',
     //     '/assets/portfolio8.jpg',
     // ]
 
     let data = [
-        ['/assets/portfolio1.png', '/assets/portfolio2.png'],
-        ['/assets/portfolio3.png', '/assets/portfolio4.png'],
-        ['/assets/portfolio5.png', '/assets/portfolio6.png'],
-        ['/assets/portfolio7.png', '/assets/portfolio8.png']
+        ['/assets/embroidery-digitizing-sample-1.png', '/assets/embroidery-digitizing-sample-2.png'],
+        ['/assets/embroidery-digitizing-sample-3.png', '/assets/embroidery-digitizing-sample-4.png'],
+        ['/assets/embroidery-digitizing-sample-5.png', '/assets/embroidery-digitizing-sample-6.png'],
+        ['/assets/embroidery-digitizing-sample-7.png', '/assets/embroidery-digitizing-sample-8.png']
     ]
     return (
         <div className='relative py-14' id='gallery'>
-            <Image src={'/assets/portfolio-top-image.svg'} width={1500} height={500} className='absolute top-0 left-0 w-full' alt='svg' />
-            <Image src={'/assets/portfolio-bottom-image.svg'} width={1500} height={500} className='absolute bottom-0 left-0 w-full' alt='svg' />
+            <Image src={'/assets/portfolio-top-image.svg'} width={1500} height={500} className='absolute top-0 left-0 w-full' alt='' />
+            <Image src={'/assets/portfolio-bottom-image.svg'} width={1500} height={500} className='absolute bottom-0 left-0 w-full' alt='' />
             <LayoutWrapper>
                 <div className='relative z-20'>
                     <motion.div
@@ -66,7 +66,7 @@ function Portfolio() {
                                         transition={{ duration: 1 }}
                                         viewport={{ once: true }}
                                     >
-                                        <Image src={image} width={500} height={500} className='w-full' alt='1' />
+                                        <Image src={image} width={500} height={500} className='w-full' alt='Embroidery digitizing sample by Prime Graphics' />
                                     </motion.div>
                                 )
                             })
@@ -125,13 +125,13 @@ function Portfolio() {
                                                         <div className='absolute bottom-0 left-0 w-full h-full text-white font-bold flex items-end pb-4 px-4 bg-gradient-to-t from-black/70 via-black/40 to-transparent z-50 translate-y-full group-hover:translate-y-0 transition-all [transition-duration:300ms]'>
                                                             Digitizing Gallery
                                                         </div>
-                                                        <Image src={image[0]} width={500} height={500} className='w-full h-full object-contain group-hover:scale-125 transition-all origin-center [transition-duration:300ms]' alt='1' />
+                                                        <Image src={image[0]} width={500} height={500} className='w-full h-full object-contain group-hover:scale-125 transition-all origin-center [transition-duration:300ms]' alt='Embroidery digitizing sample by Prime Graphics' />
                                                     </div>
                                                     <div className='relative w-full h-[300px] group overflow-hidden border-2 rounded-xl p-4'>
                                                         <div className='absolute bottom-0 left-0 w-full h-full text-white font-bold flex items-end pb-4 px-4 bg-gradient-to-t from-black/70 via-black/40 to-transparent z-50 translate-y-full group-hover:translate-y-0 transition-all [transition-duration:300ms]'>
                                                             Digitizing Gallery
                                                         </div>
-                                                        <Image src={image[1]} width={500} height={500} className='w-full h-full object-contain group-hover:scale-125 transition-all origin-center [transition-duration:300ms]' alt='1' />
+                                                        <Image src={image[1]} width={500} height={500} className='w-full h-full object-contain group-hover:scale-125 transition-all origin-center [transition-duration:300ms]' alt='Embroidery digitizing sample by Prime Graphics' />
                                                     </div>
                                                 </div>
                                             </SwiperSlide>

@@ -63,7 +63,7 @@ function Features() {
                                         <div className='bg-white relative h-[375px] group !rounded-[35px] flex flex-col overflow-hidden shadow-[0_4px_4px_0_rgba(0,0,0,0.3)]'>
                                             <div className='bg-light-primary'>
                                                 <div className='w-full h-[300px] group-hover:!h-0 bg-white !rounded-br-[35px] px-5 py-5 group-hover:py-0 flex justify-center transition-all [transition-duration:600ms]'>
-                                                    <Image src={val.image} width={350} height={350} className='w-auto h-full object-cover' alt='image' />
+                                                    <Image src={val.image} width={350} height={350} className='w-auto h-full object-cover' alt={val.title} />
                                                 </div>
                                             </div>
                                             <div className='px-5 py-3 !rounded-s-[35px] !rounded-br-[35px] h-[375px] group-hover:overflow-y-auto lg:group-hover:overflow-y-hidden transition-all [transition-duration:600ms] bg-light-primary'>
