@@ -39,7 +39,7 @@ export const homeFaqs: Faq[] = [
     {
         q: 'What custom patches does Prime Graphics make?',
         a: 'We make custom embroidered patches, PVC (rubber) patches, leather patches and sublimation (full-colour printed) patches with your logo, for hats, uniforms, jackets, bags, clubs and brand merchandise, with all common backings (sew-on, iron-on, Velcro, adhesive and more) and worldwide shipping. Send your logo for a free design mock-up and quote.',
-        link: { href: '/custom-patches', text: 'See all our custom patches' },
+        link: { href: '/embroidery-patch', text: 'See all our custom patches' },
     },
     {
         q: 'How much does embroidery digitizing cost?',
@@ -69,7 +69,7 @@ export const homeFaqs: Faq[] = [
     {
         q: 'Do you make custom embroidered patches and custom PVC patches?',
         a: 'Yes. Custom embroidered patches give a classic stitched look, and custom PVC patches (rubber patches) give bold 2D or 3D detail that is flexible and waterproof. We also make custom leather patches and full-colour sublimation patches. Minimum order and production time depend on the patch type and size and are confirmed in your quote.',
-        link: { href: '/custom-patches#embroidered', text: 'Custom embroidered patches' },
+        link: { href: '/embroidery-patch#embroidered', text: 'Custom embroidered patches' },
     },
     {
         q: 'Can you vectorise my logo?',

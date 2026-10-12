@@ -61,7 +61,7 @@ const faqs: Faq[] = [
     {
         q: 'Do you make vector files for laser engraving and DTF?',
         a: 'Yes. Customers use our vector files for laser engraving, DTF and screen printing, vinyl cutting, signs and embroidered hat patches.',
-        link: { href: '/custom-patches', text: 'Custom patches' },
+        link: { href: '/embroidery-patch', text: 'Custom patches' },
     },
     {
         q: 'How do I order a design service?',

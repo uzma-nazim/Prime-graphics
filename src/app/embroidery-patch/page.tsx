@@ -13,7 +13,7 @@ const description =
 export const metadata: Metadata = pageMetadata({
     title: 'Custom Patches – Embroidered, PVC & Leather',
     description,
-    path: '/custom-patches',
+    path: '/embroidery-patch',
     imageAlt: 'Custom patches made by Prime Graphics',
 });
 
@@ -45,14 +45,14 @@ const patchServices = [
     },
 ];
 
-function CustomPatches() {
+function Embroidery() {
     return (
         <div>
-            <ServiceJsonLd name='Custom Patches' description={description} path='/custom-patches' serviceType='Custom patches' image={DEFAULT_OG_IMAGE} />
+            <ServiceJsonLd name='Custom Patches' description={description} path='/embroidery-patch' serviceType='Custom patches' image={DEFAULT_OG_IMAGE} />
             {patchServices.map((svc) => (
-                <ServiceJsonLd key={svc.anchor} name={svc.name} description={svc.description} path='/custom-patches' anchor={svc.anchor} serviceType={svc.name} image={svc.image} />
+                <ServiceJsonLd key={svc.anchor} name={svc.name} description={svc.description} path='/embroidery-patch' anchor={svc.anchor} serviceType={svc.name} image={svc.image} />
             ))}
-            <BreadcrumbJsonLd items={[{ name: 'Home', path: '/' }, { name: 'Custom Patches', path: '/custom-patches' }]} />
+            <BreadcrumbJsonLd items={[{ name: 'Home', path: '/' }, { name: 'Custom Patches', path: '/embroidery-patch' }]} />
 
             <EmbroideryPatch />
             <EmbroideryPatches />
@@ -95,4 +95,4 @@ function CustomPatches() {
     );
 }
 
-export default CustomPatches;
+export default Embroidery;

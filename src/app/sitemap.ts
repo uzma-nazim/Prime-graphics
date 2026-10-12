@@ -5,7 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const lastModified = new Date();
     const pages: { path: string; priority: number }[] = [
         { path: '', priority: 1.0 },
-        { path: '/custom-patches', priority: 1.0 },
+        { path: '/embroidery-patch', priority: 1.0 },
         { path: '/services', priority: 0.8 },
     ];
     return pages.map((p) => ({

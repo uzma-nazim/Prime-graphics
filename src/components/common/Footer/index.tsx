@@ -1,8 +1,7 @@
-import { Mail, MapPin, Phone } from "lucide-react"
+import { Facebook, Instagram, Mail, MapPin, Phone, Twitter } from "lucide-react"
 import Image from "next/image"
 import LayoutWrapper from "../LayoutWrapper"
 import Link from "next/link"
-import SocialLinks from "../SocialLinks"
 
 const navigation = {
     company: [
@@ -13,11 +12,11 @@ const navigation = {
         { name: 'Packages', href: '/#packages' },
     ],
     patches: [
-        { name: 'All Custom Patches', href: '/custom-patches' },
-        { name: 'Embroidered Patches', href: '/custom-patches#embroidered' },
-        { name: 'PVC Patches', href: '/custom-patches#pvc' },
-        { name: 'Leather Patches', href: '/custom-patches#leather' },
-        { name: 'Sublimation Patches', href: '/custom-patches#sublimation' },
+        { name: 'All Custom Patches', href: '/embroidery-patch' },
+        { name: 'Embroidered Patches', href: '/embroidery-patch#embroidered' },
+        { name: 'PVC Patches', href: '/embroidery-patch#pvc' },
+        { name: 'Leather Patches', href: '/embroidery-patch#leather' },
+        { name: 'Sublimation Patches', href: '/embroidery-patch#sublimation' },
     ],
     solutions: [
         { name: 'Embroidery Digitizing', href: '/services#digitize' },
@@ -49,7 +48,11 @@ export default function Footer() {
                             </p>
                             <div className="flex flex-col gap-4 mt-10">
                                 <p className="font-semibold text-white">Follow Us:</p>
-                                <SocialLinks />
+                                <div className='flex gap-3 text-white'>
+                                    <Twitter size={20} strokeWidth={1} aria-hidden='true' />
+                                    <Link href='https://www.facebook.com/profile.php?id=100083557743100' target='_blank' aria-label='Prime Graphics on Facebook'><Facebook size={20} strokeWidth={1} aria-hidden='true' /></Link>
+                                    <Link href='https://www.instagram.com/prime_graphics269' target='_blank' aria-label='Prime Graphics on Instagram'><Instagram size={20} strokeWidth={1} aria-hidden='true' /></Link>
+                                </div>
                             </div>
                         </div>
                         <div className="mt-16 sm:grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
@@ -111,7 +114,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="border-t border-white/40 pt-5 mt-8 lg:mt-10">
-                        <p className="text-sm leading-5 text-gray-400 text-center">Copyright © {new Date().getFullYear()} Prime Graphics. All Rights Reserved.</p>
+                        <p className="text-sm leading-5 text-gray-400 text-center">Copyright © All Rights Reserved - 2024</p>
                     </div>
                 </div>
             </LayoutWrapper>

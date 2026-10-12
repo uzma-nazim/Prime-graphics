@@ -1,6 +1,6 @@
 import type { Faq } from './site';
 
-// FAQs for /custom-patches. Only facts the business has confirmed go here.
+// FAQs for /embroidery-patch. Only facts the business has confirmed go here.
 // Confirmed by owner: minimum order and production/shipping time depend on patch type and size;
 // worldwide shipping; all common backing types available.
 

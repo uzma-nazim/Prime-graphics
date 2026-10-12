@@ -9,13 +9,14 @@ Goal: rank on Google (UK, USA, worldwide) and be recommended by AI assistants fo
 - `yarn install`, `yarn build`, `yarn start` (Node 24). Do not push until the owner says "push".
 
 ## Pages
-The site has three pages only: `/`, `/custom-patches` (the old `/embroidery-patch`, which redirects to it) and `/services`.
-Do not add new pages. All SEO work goes into these existing pages.
+The site has three pages only: `/`, `/embroidery-patch` and `/services`.
+Do not add, delete, rename or move pages. All SEO work goes into these existing pages.
+Do not remove existing content (for example the two locations in the contact section, footer icons or text). Add or reword for keywords; never delete.
 
 ## Where SEO lives
 - `src/lib/seo.ts`: `pageMetadata()` builds title, description, canonical, Open Graph and Twitter tags. Every page uses it.
 - `src/lib/site.ts`: business facts, home title/description, home FAQs.
-- `src/lib/patches.ts`: FAQs for `/custom-patches`.
+- `src/lib/patches.ts`: FAQs for `/embroidery-patch`.
 - `src/components/seo/JsonLd.tsx`: ProfessionalService, Service, BreadcrumbList, FAQPage.
 - `src/components/common/FaqSection`: visible FAQ plus FAQPage JSON-LD from the same data.
 - `src/app/sitemap.ts`, `src/app/robots.ts`, `public/llms.txt`.
@@ -24,7 +25,7 @@ Do not add new pages. All SEO work goes into these existing pages.
 | Page | Main keyword | Secondary |
 |---|---|---|
 | `/` | custom patches + brand "Prime Graphics" | custom embroidered patches, embroidery digitizing |
-| `/custom-patches` | custom patches | custom embroidered patches, custom PVC patches (rubber patches), custom leather patches, custom sublimation patches (printed patches), custom patches for hats, custom iron on patches, custom velcro patches, custom patches for jackets, custom patches UK |
+| `/embroidery-patch` | custom patches | custom embroidered patches, custom PVC patches (rubber patches), custom leather patches, custom sublimation patches (printed patches), custom patches for hats, custom iron on patches, custom velcro patches, custom patches for jackets, custom patches UK |
 | `/services` | embroidery digitizing services | embroidery digitising, embroidery digitizing service UK, logo digitizing, cap digitizing, 3D puff digitizing, DST file, vector art services, vectorise logo, vectorize logo, raster to vector conversion, laser engraving designs |
 
 ## You may change
