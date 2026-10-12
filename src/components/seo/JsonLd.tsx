@@ -7,7 +7,7 @@ function Script({ data }: { data: object }) {
     return (
         <script
             type='application/ld+json'
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, '\\u003c') }}
         />
     );
 }
@@ -38,6 +38,7 @@ export function OrganizationJsonLd() {
         areaServed: ['GB', 'US', 'CA', 'AU', 'IE', 'NZ', 'DE', 'FR', 'NL', 'AE'],
         sameAs: business.social,
         knowsAbout: [
+            'Custom patches',
             'Embroidery digitizing',
             'Logo digitizing',
             'Cap and hat digitizing',
@@ -105,10 +106,12 @@ export function FaqJsonLd({ faqs }: { faqs: Faq[] }) {
     );
 }
 
-export function ServiceJsonLd({ name, description, path, minPrice, maxPrice }: {
+export function ServiceJsonLd({ name, description, path, serviceType, image, minPrice, maxPrice }: {
     name: string;
     description: string;
     path: string;
+    serviceType?: string;
+    image?: string;
     minPrice?: number;
     maxPrice?: number;
 }) {
@@ -117,9 +120,12 @@ export function ServiceJsonLd({ name, description, path, minPrice, maxPrice }: {
             data={{
                 '@context': 'https://schema.org',
                 '@type': 'Service',
+                '@id': `${SITE_URL}${path}#service`,
                 name,
                 description,
                 url: `${SITE_URL}${path}`,
+                ...(serviceType ? { serviceType } : {}),
+                ...(image ? { image: `${SITE_URL}${image}` } : {}),
                 provider: { '@id': `${SITE_URL}/#business` },
                 areaServed: ['GB', 'US', 'CA', 'AU', 'Worldwide'],
                 ...(minPrice !== undefined ? {

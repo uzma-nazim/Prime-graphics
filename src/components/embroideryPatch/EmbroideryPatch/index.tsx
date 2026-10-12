@@ -29,7 +29,7 @@ function EmbroideryPatch() {
                     <div className='block md:flex relative z-20'>
                         <div className='flex justify-center w-full md:w-1/2 md:border-r border-[#C5C2C1]'>
                             <div className='w-[70%] lg:w-[60%] overflow-hidden'>
-                                <Image src={'/assets/embroideryPatch/embroidery-patch.svg'} width={500} height={500} className='w-full object-contain hover:scale-125 transition-all origin-center [transition-duration:300ms]' alt='Custom embroidered patch made by Prime Graphics' />
+                                <Image src={'/assets/embroideryPatch/embroidery-patch.svg'} width={500} height={500} priority sizes='(min-width: 1024px) 27vw, (min-width: 768px) 32vw, 63vw' className='w-full object-contain hover:scale-125 transition-all origin-center [transition-duration:300ms]' alt='Custom embroidered patch made by Prime Graphics' />
                             </div>
                         </div>
                         <div className='w-full md:w-1/2 md:pl-10 mt-10 md:mt-0'>

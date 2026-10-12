@@ -24,8 +24,10 @@ const sharedFaqs = (name: string): Faq[] => [
 export type PatchType = {
     slug: string;
     name: string; // e.g. "PVC Patches"
-    metaTitle: string;
+    keyword: string; // the one main keyword this page targets
+    metaTitle: string; // page part only; "| Prime Graphics" is added by pageMetadata()
     metaDescription: string;
+    ogImage: string; // social share image (PNG/JPG, not SVG)
     h1: string;
     eyebrow: string;
     intro: string;
@@ -39,17 +41,19 @@ export type PatchType = {
     faqs: Faq[];
 };
 
-const embroideredGallery = [1, 3, 4, 5, 6, 7, 8].map((n) => `/assets/embroideryPatch/patches/${n}.png`);
-const leatherGallery = [1, 2, 3, 4, 5, 6, 7].map((n) => `/assets/embroideryPatch/leather/${n}.png`);
+const embroideredGallery = [1, 3, 4, 5, 6, 7, 8].map((n) => `/assets/embroideryPatch/patches/custom-embroidered-patch-${n}.png`);
+const leatherGallery = [1, 2, 3, 4, 5, 6, 7].map((n) => `/assets/embroideryPatch/leather/custom-leather-patch-${n}.png`);
 const pvcGallery = [1, 2, 3, 4, 5, 6, 7].map((n) => `/assets/embroideryPatch/pvc/custom-pvc-patch-${n}.png`);
 
 export const patchTypes: PatchType[] = [
     {
         slug: 'custom-embroidered-patches',
         name: 'Embroidered Patches',
-        metaTitle: 'Custom Embroidered Patches – Free Design & Quote',
+        keyword: 'custom embroidered patches',
+        metaTitle: 'Custom Embroidered Patches – Free Quote',
         metaDescription:
-            'Order custom embroidered patches for hats, uniforms, jackets, clubs and brands. Free design mock-up and quote, premium threads, made to your size and shape. UK, USA & worldwide.',
+            'Custom embroidered patches for hats, uniforms, jackets and clubs, digitized in-house for sharp detail. Any size, shape and backing. Get a free quote today.',
+        ogImage: '/assets/embroideryPatch/patches/custom-embroidered-patch-1.png',
         h1: 'Custom Embroidered Patches',
         eyebrow: 'Made to order · UK, USA & worldwide',
         intro:
@@ -68,6 +72,12 @@ export const patchTypes: PatchType[] = [
                 ],
             },
             {
+                h2: 'Embroidered patches for hats, jackets and uniforms',
+                body: [
+                    'Embroidered patches for hats and trucker caps are one of our most requested orders, alongside patches for work uniforms, biker and denim jackets, sports clubs and bags. Every embroidery custom patch is made to your size, shape and thread colours (colors), with the backing you choose: sew-on, iron-on, Velcro or adhesive.',
+                ],
+            },
+            {
                 h2: 'How to order custom embroidered patches',
                 body: [
                     'Send us your logo or idea, the size you want and how many patches you need. We send a free design mock-up and quote, make any changes you want, then produce your patches once you approve the design.',
@@ -79,6 +89,10 @@ export const patchTypes: PatchType[] = [
             {
                 q: 'How do I order custom embroidered patches?',
                 a: 'Email your logo or artwork, the size and the quantity to primeservice903@gmail.com or call +44 7429 915781. We reply with a free mock-up and quote, then produce your patches once you approve the design.',
+            },
+            {
+                q: 'Do you make embroidered patches for hats?',
+                a: 'Yes. Embroidered patches for hats and trucker caps are among our most popular orders. Tell us the hat style and patch size and we will recommend a suitable backing, such as sew-on or iron-on.',
             },
             {
                 q: 'Can you make embroidered patches from my logo?',
@@ -93,9 +107,11 @@ export const patchTypes: PatchType[] = [
     {
         slug: 'custom-pvc-patches',
         name: 'PVC Patches',
-        metaTitle: 'Custom PVC Patches – Rubber Logo Patches for Hats & Gear',
+        keyword: 'custom PVC patches',
+        metaTitle: 'Custom PVC Patches – Rubber Logo Patches',
         metaDescription:
-            'Custom PVC (rubber) patches with your logo: bold 2D and 3D detail, vibrant colours, flexible and waterproof. Ideal for hats, bags, uniforms and tactical gear. Free quote.',
+            'Custom PVC patches (rubber patches) with your logo in bold 2D or 3D detail. Flexible, waterproof and ideal for hats, bags and gear. Get a free quote today.',
+        ogImage: '/assets/embroideryPatch/pvc/custom-pvc-patches.jpg',
         h1: 'Custom PVC Patches',
         eyebrow: 'Rubber logo patches · UK, USA & worldwide',
         intro:
@@ -123,8 +139,12 @@ export const patchTypes: PatchType[] = [
         uses: ['Trucker hats and caps', 'Tactical and airsoft gear', 'Outdoor and fishing brands', 'Bags and backpacks', 'Workwear and uniforms', 'Keychains and merch'],
         faqs: [...sharedFaqs('PVC Patches'),
             {
+                q: 'Are PVC patches good for hats?',
+                a: 'Yes. PVC patches for hats are a popular choice, especially on trucker hats and caps, because the raised rubber detail stays sharp and the patch is waterproof and durable. We can supply them with sew-on, iron-on, Velcro or adhesive backing.',
+            },
+            {
                 q: 'What are custom PVC patches?',
-                a: 'Custom PVC patches are flexible rubber patches moulded with your logo. They have raised 2D or 3D detail, bright colours and are waterproof and very durable.',
+                a: 'Custom PVC patches, also called custom rubber patches, are flexible rubber patches moulded with your logo. They have raised 2D or 3D detail, bright colours and are waterproof and very durable.',
             },
             {
                 q: 'Are PVC patches better than embroidered patches?',
@@ -139,9 +159,11 @@ export const patchTypes: PatchType[] = [
     {
         slug: 'custom-leather-patches',
         name: 'Leather Patches',
-        metaTitle: 'Custom Leather Patches for Hats, Jeans & Jackets',
+        keyword: 'custom leather patches',
+        metaTitle: 'Custom Leather Patches for Hats & Jackets',
         metaDescription:
-            'Custom leather patches branded with your logo for hats, denim, jackets and bags. Timeless, durable branding with free design mock-up and quote. UK, USA & worldwide.',
+            'Custom leather patches for hats, denim, jackets and bags, branded with your logo. Premium, durable finish with a free design mock-up. Get a free quote today.',
+        ogImage: '/assets/embroideryPatch/leather-patch.png',
         h1: 'Custom Leather Patches',
         eyebrow: 'Engraved & branded leather · UK, USA & worldwide',
         intro:
@@ -172,6 +194,10 @@ export const patchTypes: PatchType[] = [
                 a: 'Yes. We prepare your logo for engraving and produce custom leather patches in the size and shape you need. Send your logo for a free mock-up.',
             },
             {
+                q: 'Do you make leather patches for hats?',
+                a: 'Yes. Custom leather hat patches are one of the most popular ways to brand trucker hats and caps. Send your logo and the hat style, and we will prepare a free mock-up in the size and shape you need.',
+            },
+            {
                 q: 'What are leather patches used for?',
                 a: 'Leather patches are popular on hats, jeans, jackets, bags and as product labels, giving a premium, long-lasting branded look.',
             },
@@ -184,9 +210,11 @@ export const patchTypes: PatchType[] = [
     {
         slug: 'custom-sublimation-patches',
         name: 'Sublimation Patches',
-        metaTitle: 'Custom Sublimation Patches – Full Colour Printed Patches',
+        keyword: 'custom sublimation patches',
+        metaTitle: 'Custom Sublimation Patches – Full Colour',
         metaDescription:
-            'Custom sublimation patches print your artwork in full colour with photo-quality detail, gradients and unlimited colours. Perfect for complex logos and photos. Free quote.',
+            'Custom sublimation patches: full colour printed patches with photo-quality detail, gradients and unlimited colours. Any size or backing. Get a free quote.',
+        ogImage: '/assets/embroideryPatch/pvc/custom-pvc-patches.jpg',
         h1: 'Custom Sublimation Patches',
         eyebrow: 'Full-colour printed patches · UK, USA & worldwide',
         intro:
@@ -218,6 +246,10 @@ export const patchTypes: PatchType[] = [
                 a: 'A sublimation patch is a printed patch where the design is heat-transferred into the fabric. It allows unlimited colours, gradients and photo-quality detail with a smooth, flat finish.',
             },
             {
+                q: 'Are sublimation patches the same as printed patches?',
+                a: 'Yes. Sublimation patches are often called printed patches or full colour (full color) patches, because the artwork is printed into the fabric instead of being stitched with thread.',
+            },
+            {
                 q: 'When should I choose sublimation instead of embroidery?',
                 a: 'Choose sublimation for photos, gradients, very small text or designs with many colours. Choose embroidery for bold logos with a few solid colours and a textured look.',
             },
@@ -233,6 +265,7 @@ export const patchHubFaqs: Faq[] = [
     {
         q: 'What types of custom patches do you make?',
         a: 'We make custom embroidered patches, PVC (rubber) patches, leather patches and sublimation (full-colour printed) patches, all made to your design, size and shape.',
+        link: { href: '/custom-pvc-patches', text: 'Custom PVC patches' },
     },
     {
         q: 'Which patch type is best for my logo?',
@@ -253,6 +286,24 @@ export const patchHubFaqs: Faq[] = [
     {
         q: 'What patch backings do you offer?',
         a: `We offer all common backings, including ${BACKINGS}.`,
+    },
+    {
+        q: 'Do you make custom patches for hats?',
+        a: 'Yes. Custom patches for hats and trucker caps are among our most popular orders. Embroidered, leather and PVC patches all work well on hats, and we will recommend the best type and backing for your hat style.',
+        link: { href: '/custom-leather-patches', text: 'Custom leather patches for hats' },
+    },
+    {
+        q: 'Can I order custom iron-on patches or custom Velcro patches?',
+        a: 'Yes. Any of our patches can be made as custom iron-on patches or custom Velcro (hook and loop) patches, as well as sew-on or adhesive. Tell us how the patch will be attached when you ask for your quote.',
+    },
+    {
+        q: 'Do you make custom patches for jackets?',
+        a: 'Yes. We make custom patches for jackets, including biker and denim jackets, work uniforms and outerwear, in any size and shape.',
+        link: { href: '/custom-embroidered-patches', text: 'Custom embroidered patches for jackets and uniforms' },
+    },
+    {
+        q: 'Do you make custom patches in the UK?',
+        a: 'Yes. Prime Graphics is based in London and supplies custom patches across the UK, and we also ship to the USA and worldwide. Delivery time depends on the patch type, size and quantity and is confirmed with your quote.',
     },
     {
         q: 'Can you design my patch if I only have an idea?',

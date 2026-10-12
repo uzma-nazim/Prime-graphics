@@ -2,21 +2,18 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import PatchLanding from '@/components/patches/PatchLanding';
 import { patchTypes } from '@/lib/patches';
+import { pageMetadata } from '@/lib/seo';
 
 const patch = patchTypes.find((p) => p.slug === 'custom-sublimation-patches');
 
 export const metadata: Metadata = patch
-    ? {
+    ? pageMetadata({
           title: patch.metaTitle,
           description: patch.metaDescription,
-          alternates: { canonical: '/custom-sublimation-patches' },
-          openGraph: {
-              title: patch.metaTitle,
-              description: patch.metaDescription,
-              url: '/custom-sublimation-patches',
-              ...(patch.heroImage ? { images: [patch.heroImage] } : {}),
-          },
-      }
+          path: '/custom-sublimation-patches',
+          image: patch.ogImage,
+          imageAlt: 'Custom patches made by Prime Graphics',
+      })
     : {};
 
 export default function Page() {

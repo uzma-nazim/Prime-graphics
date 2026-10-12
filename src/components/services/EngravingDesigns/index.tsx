@@ -30,13 +30,13 @@ function EngravingDesigns() {
                             <Image src={'/assets/services/engraving-designs.png'} width={500} height={500} className='w-[70%] lg:w-[55%] object-contain' alt='Laser engraving design artwork prepared by Prime Graphics' />
                         </div>
                         <div className='w-full md:w-1/2 md:pl-10 mt-10 md:mt-0'>
-                            <h2 className='text-xl sm:text-2xl lg:text-3xl font-medium'>Crafted Engraving Designs</h2>
+                            <h3 className='text-xl sm:text-2xl lg:text-3xl font-medium'>Crafted Engraving Designs</h3>
                             <p className='text-base lg:text-xl mt-7 tracking-wider'>Crafted Engraving Designs embodies the artistry and precision of expert craftsmanship. With meticulous attention to detail, we specialize in creating bespoke engraved designs that elevate any surface or product. From personalized gifts to corporate awards, our skilled artisans transform your vision into tangible works of art. Whether you seek intricate patterns, elegant typography, or custom logos, our engraving services deliver unmatched quality and sophistication. Experience the timeless elegance of engraved designs with Crafted Engraving Designs.</p>
                             <div className='flex gap-2 items-center mt-7'>
                                 <span className='w-[40px] h-[40px] flex justify-center items-center bg-dark-primary rounded-full'>
                                     <Check className='text-white' />
                                 </span>
-                                <h2 className='text-lg lg:text-[22px] font-semibold'>Perfect solution Designs Providers</h2>
+                                <h3 className='text-lg lg:text-[22px] font-semibold'>Perfect solution Designs Providers</h3>
                             </div>
                         </div>
                     </div>

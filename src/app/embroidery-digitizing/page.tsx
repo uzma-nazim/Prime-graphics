@@ -4,18 +4,19 @@ import Link from 'next/link';
 import { Check } from 'lucide-react';
 import { Contact, FaqSection, LayoutWrapper, OrderNowLink, Packages } from '@/components/common';
 import { BreadcrumbJsonLd, ServiceJsonLd } from '@/components/seo/JsonLd';
+import { pageMetadata } from '@/lib/seo';
 import type { Faq } from '@/lib/site';
 
-const title = 'Embroidery Digitizing Services from $9 – 4 Hour Turnaround';
 const description =
-    'Professional embroidery digitizing (digitising) for embroidery shops in the UK, USA & worldwide. Left chest logos from $9, jacket backs from $12, DST/EMB/PES files, free edits.';
+    'Embroidery digitizing services (digitising) from $9: logo, cap and 3D puff digitizing in DST, EMB or PES with 4-hour turnaround and free edits. Free quote.';
 
-export const metadata: Metadata = {
-    title,
+export const metadata: Metadata = pageMetadata({
+    title: 'Embroidery Digitizing Services from $9',
     description,
-    alternates: { canonical: '/embroidery-digitizing' },
-    openGraph: { title, description, url: '/embroidery-digitizing', images: ['/assets/embroidery-circle.png'] },
-};
+    path: '/embroidery-digitizing',
+    image: '/assets/embroidery-circle.png',
+    imageAlt: 'Embroidered logo digitized by Prime Graphics',
+});
 
 const faqs: Faq[] = [
     {
@@ -39,6 +40,18 @@ const faqs: Faq[] = [
         a: 'Yes. Digitizing is the American spelling and digitising is the British spelling. Both mean converting artwork into a stitch file for an embroidery machine.',
     },
     {
+        q: 'Do you offer an embroidery digitizing service in the UK?',
+        a: 'Yes. Prime Graphics is based in London and provides embroidery digitising for UK embroidery shops and brands, as well as customers in the USA and worldwide. Every file is delivered by email, usually in about 4 hours.',
+    },
+    {
+        q: 'What is a DST file?',
+        a: 'DST is the Tajima embroidery file format and the most widely used commercial machine format. Every order includes a DST file alongside EMB, a PDF stitch sheet and a BMP/JPG preview.',
+    },
+    {
+        q: 'Do you do logo digitizing, cap digitizing and 3D puff digitizing?',
+        a: 'Yes. We digitize logos for left chest, caps and hats, and jacket backs, and we also do 3D puff digitizing. Tell us the garment and finished size and we will build the file for it.',
+    },
+    {
         q: 'Do you offer a free trial?',
         a: 'Yes. Your first simple order can be done as a free trial so you can test our stitch quality and turnaround before you pay.',
     },
@@ -55,9 +68,11 @@ function EmbroideryDigitizingPage() {
     return (
         <div>
             <ServiceJsonLd
-                name='Embroidery Digitizing'
+                name='Embroidery Digitizing Services'
                 description={description}
                 path='/embroidery-digitizing'
+                serviceType='Embroidery digitizing'
+                image='/assets/embroidery-circle.png'
                 minPrice={9}
                 maxPrice={50}
             />
@@ -86,7 +101,7 @@ function EmbroideryDigitizingPage() {
                             </div>
                         </div>
                         <div className='w-full md:w-2/5 mt-10 md:mt-0 flex justify-center'>
-                            <Image src='/assets/embroidery-circle.png' width={500} height={500} priority className='w-[80%] h-auto' alt='Embroidered logo digitized by Prime Graphics' />
+                            <Image src='/assets/embroidery-circle.png' width={500} height={500} priority sizes='(min-width: 768px) 29vw, 72vw' className='w-[80%] h-auto' alt='Embroidered logo digitized by Prime Graphics' />
                         </div>
                     </div>
                 </LayoutWrapper>
@@ -128,6 +143,13 @@ function EmbroideryDigitizingPage() {
                             PES (Brother), EXP (Melco/Bernina), JEF (Janome) or VP3? Just ask and we will include it.
                         </p>
 
+                        <h2 className='text-2xl lg:text-3xl font-bold text-secondary mt-6'>Logo, cap and 3D puff digitizing</h2>
+                        <p>
+                            Our embroidery digitizing services cover logo digitizing for left chest and jacket back designs, cap digitizing for
+                            hats, and 3D puff digitizing. Each one is digitised for the garment and size you are stitching, because a file built
+                            for a flat polo shirt will not sew the same way on a structured cap.
+                        </p>
+
                         <h2 className='text-2xl lg:text-3xl font-bold text-secondary mt-6'>How ordering works</h2>
                         <ol className='grid sm:grid-cols-2 gap-5'>
                             {steps.map((s, i) => (
@@ -148,9 +170,10 @@ function EmbroideryDigitizingPage() {
                             <Link href='/#gallery' className='underline font-semibold text-secondary'>digitizing gallery</Link>.
                         </p>
                         <p>
-                            Need artwork redrawn first? Our <Link href='/vector-art-conversion' className='underline font-semibold text-secondary'>vector art conversion</Link> service
+                            Need artwork redrawn first? Our <Link href='/vector-art-conversion' className='underline font-semibold text-secondary'>vector art services</Link>
                             cleans up low-resolution logos, and we also make{' '}
-                            <Link href='/custom-patches' className='underline font-semibold text-secondary'>custom embroidered, leather and PVC patches</Link>.
+                            <Link href='/custom-patches' className='underline font-semibold text-secondary'>custom patches</Link>, including{' '}
+                            <Link href='/custom-embroidered-patches' className='underline font-semibold text-secondary'>custom embroidered patches</Link>.
                         </p>
                     </div>
                 </LayoutWrapper>

@@ -1,4 +1,5 @@
 import { ChevronDown } from 'lucide-react';
+import Link from 'next/link';
 import type { Faq } from '@/lib/site';
 import { FaqJsonLd } from '@/components/seo/JsonLd';
 import LayoutWrapper from '../LayoutWrapper';
@@ -22,6 +23,11 @@ function FaqSection({ faqs, title = 'Frequently Asked Questions', id = 'faq' }: 
                                 <ChevronDown className='flex-shrink-0 transition-transform group-open:rotate-180' aria-hidden='true' />
                             </summary>
                             <p className='mt-3 text-base leading-relaxed text-[#494747]'>{f.a}</p>
+                            {f.link && (
+                                <p className='mt-2 text-base'>
+                                    <Link href={f.link.href} className='underline font-semibold text-[#323131]'>{f.link.text}</Link>
+                                </p>
+                            )}
                         </details>
                     ))}
                 </div>

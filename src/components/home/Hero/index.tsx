@@ -31,8 +31,8 @@ function Hero() {
             bgImage: '/assets/heroslider1.jpg',
             subSlider: [
                 // '/assets/hero-sub-slider1_1.png',
-                // '/assets/embroideryPatch/leather/6.png',
-                // '/assets/vector/12.png',
+                // '/assets/embroideryPatch/leather/custom-leather-patch-6.png',
+                // '/assets/vector/vector-art-sample-12.png',
                 '/assets/embroidery-circle.png',
             ]
         },
@@ -49,8 +49,8 @@ function Hero() {
             bgImage: '/assets/heroslider2.jpg',
             subSlider: [
                 // '/assets/hero-sub-slider2_1.png',
-                // '/assets/embroideryPatch/patches/7.png',
-                // '/assets/vector/8.png',
+                // '/assets/embroideryPatch/patches/custom-embroidered-patch-7.png',
+                // '/assets/vector/vector-art-sample-8.png',
                 '/assets/vector-circle.png',
             ]
         },
@@ -67,8 +67,8 @@ function Hero() {
             bgImage: '/assets/heroslider3.jpg',
             subSlider: [
                 // '/assets/hero-sub-slider3_1.png',
-                // '/assets/embroideryPatch/patches/8.png',
-                // '/assets/vector/3.png',
+                // '/assets/embroideryPatch/patches/custom-embroidered-patch-8.png',
+                // '/assets/vector/vector-art-sample-3.png',
                 '/assets/engraving-circle.png',
             ]
         },
@@ -165,7 +165,7 @@ function Hero() {
                                                                     return (
                                                                         <SwiperSlide key={sub_i} className='flex items-center justify-center !my-auto relative py-10'>
                                                                             <Image src={'/assets/hero-cover.png'} width={500} height={500} className='w-[90%] absolute left-0 top-5' alt='' />
-                                                                            <Image src={image} width={500} height={500} className='w-[90%] !mx-auto my-5 relative z-30' alt={val.imageAlt} />
+                                                                            <Image src={image} width={500} height={500} priority={i === 0} sizes='(min-width: 768px) 30vw, 73vw' className='w-[90%] !mx-auto my-5 relative z-30' alt={val.imageAlt} />
                                                                         </SwiperSlide>
                                                                     )
                                                                 })

@@ -11,13 +11,13 @@ import { motion } from 'framer-motion'
 
 function LeatherPatches() {
     let images = [
-        '/assets/embroideryPatch/leather/1.png',
-        '/assets/embroideryPatch/leather/2.png',
-        '/assets/embroideryPatch/leather/3.png',
-        '/assets/embroideryPatch/leather/4.png',
-        '/assets/embroideryPatch/leather/5.png',
-        '/assets/embroideryPatch/leather/6.png',
-        '/assets/embroideryPatch/leather/7.png'
+        '/assets/embroideryPatch/leather/custom-leather-patch-1.png',
+        '/assets/embroideryPatch/leather/custom-leather-patch-2.png',
+        '/assets/embroideryPatch/leather/custom-leather-patch-3.png',
+        '/assets/embroideryPatch/leather/custom-leather-patch-4.png',
+        '/assets/embroideryPatch/leather/custom-leather-patch-5.png',
+        '/assets/embroideryPatch/leather/custom-leather-patch-6.png',
+        '/assets/embroideryPatch/leather/custom-leather-patch-7.png'
     ]
     return (
         <div>
@@ -70,7 +70,7 @@ function LeatherPatches() {
                                             <div className='absolute bottom-0 left-0 w-full h-full text-white font-bold flex items-end pb-4 px-4 bg-gradient-to-t from-black/70 via-black/40 to-transparent z-50 translate-y-full group-hover:translate-y-0 transition-all [transition-duration:300ms]'>
                                                 Leather Gallery
                                             </div>
-                                            <Image src={image} className='w-[80%] object-contain group-hover:scale-125 transition-all origin-center [transition-duration:300ms]' width={400} height={400} alt='Custom leather patch sample' />
+                                            <Image src={image} className='w-[80%] object-contain group-hover:scale-125 transition-all origin-center [transition-duration:300ms]' width={400} height={400} alt={`Custom leather patch example ${i + 1}`} />
                                         </div>
                                     </div>
                                 </SwiperSlide>

@@ -26,16 +26,25 @@ export const business = {
         'Prime Graphics makes custom patches (embroidered, PVC, leather and sublimation patches) for brands, teams, clubs and businesses in the UK, USA and worldwide. We also provide embroidery digitizing, vector art conversion and laser engraving designs, with a 4-hour turnaround on digital files.',
 };
 
-export type Faq = { q: string; a: string };
+// Home page title (page part only) and meta description. Main keyword: "custom patches".
+export const HOME_TITLE_PART = 'Custom Patches & Embroidery Digitizing';
+export const HOME_TITLE = `${HOME_TITLE_PART} | ${business.name}`;
+export const HOME_DESCRIPTION =
+    'Custom patches made to order: embroidered, PVC, leather and sublimation, plus embroidery digitizing and vector art from $9. UK, USA & worldwide. Free quote.';
+
+// `link` is an optional related page shown under the answer (descriptive anchor text, internal link).
+export type Faq = { q: string; a: string; link?: { href: string; text: string } };
 
 export const homeFaqs: Faq[] = [
     {
         q: 'What custom patches does Prime Graphics make?',
         a: 'We make custom embroidered patches, PVC (rubber) patches, leather patches and sublimation (full-colour printed) patches with your logo, for hats, uniforms, jackets, bags, clubs and brand merchandise, with all common backings (sew-on, iron-on, Velcro, adhesive and more) and worldwide shipping. Send your logo for a free design mock-up and quote.',
+        link: { href: '/custom-patches', text: 'See all our custom patches' },
     },
     {
         q: 'How much does embroidery digitizing cost?',
         a: 'Left chest logo digitizing costs $9–12 and jacket back designs cost $12–50, depending on size and stitch count. Raster to vector conversion is $9–12 and digital vector art is $14–50. Small edits and revisions are free, and bulk orders get a discount.',
+        link: { href: '/embroidery-digitizing', text: 'Embroidery digitizing services and prices' },
     },
     {
         q: 'How fast is your turnaround on digitizing and vector files?',
@@ -58,8 +67,18 @@ export const homeFaqs: Faq[] = [
         a: 'Email your artwork and details (size, fabric or product, file format) to primeservice903@gmail.com or call +44 7429 915781. We confirm the price, complete the design and send your files. You can pay by PayPal or credit/debit card.',
     },
     {
+        q: 'Do you make custom embroidered patches and custom PVC patches?',
+        a: 'Yes. Custom embroidered patches give a classic stitched look, and custom PVC patches (rubber patches) give bold 2D or 3D detail that is flexible and waterproof. We also make custom leather patches and full-colour sublimation patches. Minimum order and production time depend on the patch type and size and are confirmed in your quote.',
+        link: { href: '/custom-embroidered-patches', text: 'Custom embroidered patches' },
+    },
+    {
+        q: 'Can you vectorise my logo?',
+        a: 'Yes. We vectorise (vectorize) logos by hand rather than auto-tracing them. Raster to vector conversion costs $9–12 and digital vector art costs $14–50, with a turnaround of about 4 hours.',
+        link: { href: '/vector-art-conversion', text: 'Vector art services' },
+    },
+    {
         q: 'What is embroidery digitizing?',
-        a: 'Embroidery digitizing is converting artwork such as a logo into a stitch file that an embroidery machine can read. The digitizer sets stitch types, direction, density, underlay and pull compensation so the design sews cleanly on the chosen fabric.',
+        a: 'Embroidery digitizing is converting artwork such as a logo into a stitch file that an embroidery machine can read. The digitizer sets stitch types, direction, density, underlay and pull compensation so the design sews cleanly on the chosen fabric. In the UK it is spelled embroidery digitising.',
     },
 ];
 

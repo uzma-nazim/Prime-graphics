@@ -4,57 +4,19 @@ import "./globals.css";
 import { Footer, Header, Navbar } from "@/components/common";
 import GoogleAnalytic from "@/components/GoogleAnalytics/GoogleAnalytics";
 import { OrganizationJsonLd } from "@/components/seo/JsonLd";
-import { SITE_URL } from "@/lib/site";
+import { HOME_DESCRIPTION, HOME_TITLE, SITE_URL } from "@/lib/site";
 const inter = Inter({ subsets: ["latin"] });
 
-const title = "Custom Patches, Embroidery Digitizing & Vector Art | Prime Graphics";
-const description =
-  "Custom embroidered, PVC, leather & sublimation patches with your logo, plus embroidery digitizing and vector art from $9 with 4-hour turnaround. UK, USA & worldwide.";
-
+// Fallback metadata. Every page sets its own title, description, canonical and social tags
+// with pageMetadata() from src/lib/seo.ts.
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: title,
+    default: HOME_TITLE,
     template: "%s | Prime Graphics",
   },
-  description,
+  description: HOME_DESCRIPTION,
   applicationName: "Prime Graphics",
-  keywords: [
-    "custom patches",
-    "custom embroidered patches",
-    "custom PVC patches",
-    "custom leather patches",
-    "sublimation patches",
-    "embroidery digitizing",
-    "embroidery digitising",
-    "embroidery digitizing services",
-    "logo digitizing",
-    "DST file",
-    "vector art conversion",
-    "raster to vector",
-    "vectorize logo",
-    "custom embroidered patches",
-    "PVC patches",
-    "leather patches",
-    "embroidery digitizing UK",
-    "embroidery digitizing USA",
-  ],
-  alternates: { canonical: "/" },
-  openGraph: {
-    type: "website",
-    url: SITE_URL,
-    siteName: "Prime Graphics",
-    title,
-    description,
-    locale: "en_GB",
-    images: [{ url: "/assets/embroideryPatch/pvc/custom-pvc-patches.jpg", alt: "Custom patches by Prime Graphics" }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title,
-    description,
-    images: ["/assets/embroideryPatch/pvc/custom-pvc-patches.jpg"],
-  },
   robots: {
     index: true,
     follow: true,

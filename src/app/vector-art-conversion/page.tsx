@@ -4,23 +4,28 @@ import Link from 'next/link';
 import { Check } from 'lucide-react';
 import { Contact, FaqSection, LayoutWrapper, OrderNowLink, Packages } from '@/components/common';
 import { BreadcrumbJsonLd, ServiceJsonLd } from '@/components/seo/JsonLd';
+import { pageMetadata } from '@/lib/seo';
 import type { Faq } from '@/lib/site';
 
-const title = 'Vector Art Conversion – Raster to Vector Logo Redraw from $9';
 const description =
-    'Vectorise or vectorize your logo: hand-redrawn raster to vector conversion from $9 for print, DTF, screen printing, vinyl and laser engraving. 4-hour turnaround, free edits.';
+    'Vector art services from $9: we vectorise (vectorize) your logo by hand, raster to vector, for print, DTF, vinyl and laser. 4-hour turnaround. Free quote.';
 
-export const metadata: Metadata = {
-    title,
+export const metadata: Metadata = pageMetadata({
+    title: 'Vector Art Services – Vectorise Your Logo',
     description,
-    alternates: { canonical: '/vector-art-conversion' },
-    openGraph: { title, description, url: '/vector-art-conversion', images: ['/assets/vector-circle.png'] },
-};
+    path: '/vector-art-conversion',
+    image: '/assets/vector-circle.png',
+    imageAlt: 'Logo converted from raster to vector by Prime Graphics',
+});
 
 const faqs: Faq[] = [
     {
         q: 'How much does it cost to vectorize a logo?',
         a: 'Raster to vector conversion of a typical logo costs $9–12. Detailed digital vector artwork and illustrations cost $14–50. Small edits and revisions are free.',
+    },
+    {
+        q: 'Can you vectorise my logo?',
+        a: 'Yes. Send any JPG, PNG, photo or sketch and we will vectorise (vectorize) your logo by hand, so it stays sharp at any size. A typical logo costs $9–12 and is delivered in about 4 hours.',
     },
     {
         q: 'What is the difference between raster and vector?',
@@ -50,9 +55,11 @@ function VectorArtConversionPage() {
     return (
         <div>
             <ServiceJsonLd
-                name='Raster to Vector Art Conversion'
+                name='Vector Art Services'
                 description={description}
                 path='/vector-art-conversion'
+                serviceType='Raster to vector conversion'
+                image='/assets/vector-circle.png'
                 minPrice={9}
                 maxPrice={50}
             />
@@ -81,7 +88,7 @@ function VectorArtConversionPage() {
                             </div>
                         </div>
                         <div className='w-full md:w-2/5 mt-10 md:mt-0 flex justify-center'>
-                            <Image src='/assets/vector-circle.png' width={500} height={500} priority className='w-[80%] h-auto' alt='Logo converted from raster to vector by Prime Graphics' />
+                            <Image src='/assets/vector-circle.png' width={500} height={500} priority sizes='(min-width: 768px) 29vw, 72vw' className='w-[80%] h-auto' alt='Logo converted from raster to vector by Prime Graphics' />
                         </div>
                     </div>
                 </LayoutWrapper>
@@ -97,8 +104,8 @@ function VectorArtConversionPage() {
                             as clean paths and shapes, so it stays razor-sharp at any size and every colour can be separated for production.
                         </p>
                         <p>
-                            Online auto-trace tools produce wobbly lines, extra points and wrong colours. Our designers redraw your logo by hand,
-                            fixing fonts, curves and details, so the file is ready for production the moment you receive it.
+                            Online auto-trace tools produce wobbly lines, extra points and wrong colours (colors). Our vector art services redraw
+                            your logo by hand, fixing fonts, curves and details, so the file is ready for production the moment you receive it.
                         </p>
 
                         <h2 className='text-2xl lg:text-3xl font-bold text-secondary mt-6'>Vector conversion prices</h2>
@@ -127,7 +134,7 @@ function VectorArtConversionPage() {
                         <p>
                             Laser and CNC machines need single, closed paths with no overlaps. We prepare engraving artwork that cuts and engraves
                             cleanly, from detailed sketches to logos for wood, metal, leather and acrylic. See examples in our{' '}
-                            <Link href='/services#engraving' className='underline font-semibold text-secondary'>engraving designs</Link>.
+                            <Link href='/services#engraving' className='underline font-semibold text-secondary'>laser engraving designs</Link>.
                         </p>
 
                         <h2 className='text-2xl lg:text-3xl font-bold text-secondary mt-6'>Trusted by print and embroidery businesses</h2>
@@ -135,7 +142,8 @@ function VectorArtConversionPage() {
                             Print shops, sign makers, laser engravers and apparel brands in the UK, USA and beyond send us their artwork every week.
                             Read their <Link href='/#testimonials' className='underline font-semibold text-secondary'>reviews</Link>, browse the{' '}
                             <Link href='/#gallery' className='underline font-semibold text-secondary'>vector gallery</Link>, or pair your vector file with our{' '}
-                            <Link href='/embroidery-digitizing' className='underline font-semibold text-secondary'>embroidery digitizing</Link> service.
+                            <Link href='/embroidery-digitizing' className='underline font-semibold text-secondary'>embroidery digitizing services</Link>. We also make{' '}
+                            <Link href='/custom-patches' className='underline font-semibold text-secondary'>custom patches</Link>.
                         </p>
                     </div>
                 </LayoutWrapper>

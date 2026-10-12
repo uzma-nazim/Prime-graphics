@@ -26,7 +26,7 @@ function LeatherPatch() {
                 >
                     <div className='flex flex-col-reverse md:flex-row'>
                         <div className='w-full md:w-1/2 md:pr-10 mt-10 md:mt-0'>
-                            <h2 className='text-xl sm:text-2xl lg:text-3xl font-medium flex gap-3'><Check className='text-dark-primary flex-shrink-0' size={30} strokeWidth={3} />Timeless Elegance and Lasting Quality</h2>
+                            <h3 className='text-xl sm:text-2xl lg:text-3xl font-medium flex gap-3'><Check className='text-dark-primary flex-shrink-0' size={30} strokeWidth={3} />Timeless Elegance and Lasting Quality</h3>
                             {/* <ul className='text-base lg:text-xl mt-7 tracking-wider list-disc list-outside ml-5 sm:ml-16 flex flex-col gap-3'>
                             <li>Add a touch of sophistication and durability to your garments and accessories with our custom leather patches service.</li>
                             <li>Renowned for its durability, leather patches are built to withstand the test of time.</li>

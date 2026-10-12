@@ -12,30 +12,30 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 function EngravingDesigns() {
     // let data = [
-    //     '/assets/vector/engraving/1.png',
-    //     '/assets/vector/engraving/2.png',
-    //     '/assets/vector/engraving/3.png',
-    //     '/assets/vector/engraving/4.png',
-    //     '/assets/vector/engraving/5.png',
-    //     '/assets/vector/engraving/6.png',
-    //     '/assets/vector/engraving/7.png',
-    //     '/assets/vector/engraving/8.png',
-    //     '/assets/vector/engraving/9.png',
-    //     '/assets/vector/engraving/10.png',
-    //     '/assets/vector/engraving/11.png',
-    //     '/assets/vector/engraving/12.png',
-    //     '/assets/vector/engraving/13.png',
-    //     '/assets/vector/engraving/14.png',
+    //     '/assets/vector/engraving/laser-engraving-design-1.png',
+    //     '/assets/vector/engraving/laser-engraving-design-2.png',
+    //     '/assets/vector/engraving/laser-engraving-design-3.png',
+    //     '/assets/vector/engraving/laser-engraving-design-4.png',
+    //     '/assets/vector/engraving/laser-engraving-design-5.png',
+    //     '/assets/vector/engraving/laser-engraving-design-6.png',
+    //     '/assets/vector/engraving/laser-engraving-design-7.png',
+    //     '/assets/vector/engraving/laser-engraving-design-8.png',
+    //     '/assets/vector/engraving/laser-engraving-design-9.png',
+    //     '/assets/vector/engraving/laser-engraving-design-10.png',
+    //     '/assets/vector/engraving/laser-engraving-design-11.png',
+    //     '/assets/vector/engraving/laser-engraving-design-12.png',
+    //     '/assets/vector/engraving/laser-engraving-design-13.png',
+    //     '/assets/vector/engraving/laser-engraving-design-14.png',
     // ]
     // [
     let data = [
-        ['/assets/vector/engraving/1.png', '/assets/vector/engraving/2.png'],
-        ['/assets/vector/engraving/3.png', '/assets/vector/engraving/4.png'],
-        ['/assets/vector/engraving/5.png', '/assets/vector/engraving/6.png'],
-        ['/assets/vector/engraving/7.png', '/assets/vector/engraving/8.png'],
-        ['/assets/vector/engraving/9.png', '/assets/vector/engraving/10.png'],
-        ['/assets/vector/engraving/11.png', '/assets/vector/engraving/12.png'],
-        ['/assets/vector/engraving/13.png', '/assets/vector/engraving/14.png']
+        ['/assets/vector/engraving/laser-engraving-design-1.png', '/assets/vector/engraving/laser-engraving-design-2.png'],
+        ['/assets/vector/engraving/laser-engraving-design-3.png', '/assets/vector/engraving/laser-engraving-design-4.png'],
+        ['/assets/vector/engraving/laser-engraving-design-5.png', '/assets/vector/engraving/laser-engraving-design-6.png'],
+        ['/assets/vector/engraving/laser-engraving-design-7.png', '/assets/vector/engraving/laser-engraving-design-8.png'],
+        ['/assets/vector/engraving/laser-engraving-design-9.png', '/assets/vector/engraving/laser-engraving-design-10.png'],
+        ['/assets/vector/engraving/laser-engraving-design-11.png', '/assets/vector/engraving/laser-engraving-design-12.png'],
+        ['/assets/vector/engraving/laser-engraving-design-13.png', '/assets/vector/engraving/laser-engraving-design-14.png']
     ]
 
     return (

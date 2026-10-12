@@ -13,31 +13,31 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 function VideoGallery() {
     // let data = [
-    //     '/assets/vector/1.png',
-    //     '/assets/vector/2.jpg',
-    //     '/assets/vector/3.png',
-    //     '/assets/vector/4.png',
-    //     '/assets/vector/5.png',
-    //     '/assets/vector/6.png',
-    //     '/assets/vector/7.png',
-    //     '/assets/vector/8.png',
-    //     '/assets/vector/9.png',
-    //     '/assets/vector/10.png',
-    //     '/assets/vector/11.png',
-    //     '/assets/vector/12.png',
-    //     '/assets/vector/13.png',
-    //     '/assets/vector/14.png',
-    //     '/assets/vector/11.png',
+    //     '/assets/vector/vector-art-sample-1.png',
+    //     '/assets/vector/vector-art-sample-2.jpg',
+    //     '/assets/vector/vector-art-sample-3.png',
+    //     '/assets/vector/vector-art-sample-4.png',
+    //     '/assets/vector/vector-art-sample-5.png',
+    //     '/assets/vector/vector-art-sample-6.png',
+    //     '/assets/vector/vector-art-sample-7.png',
+    //     '/assets/vector/vector-art-sample-8.png',
+    //     '/assets/vector/vector-art-sample-9.png',
+    //     '/assets/vector/vector-art-sample-10.png',
+    //     '/assets/vector/vector-art-sample-11.png',
+    //     '/assets/vector/vector-art-sample-12.png',
+    //     '/assets/vector/vector-art-sample-13.png',
+    //     '/assets/vector/vector-art-sample-14.png',
+    //     '/assets/vector/vector-art-sample-11.png',
     // ]
 
     let data = [
-        ['/assets/vector/1.png', '/assets/vector/2.jpg'],
-        ['/assets/vector/3.png', '/assets/vector/4.png'],
-        ['/assets/vector/5.png', '/assets/vector/6.png'],
-        ['/assets/vector/7.png', '/assets/vector/8.png'],
-        ['/assets/vector/9.png', '/assets/vector/10.png'],
-        ['/assets/vector/11.png', '/assets/vector/12.png'],
-        ['/assets/vector/13.png', '/assets/vector/14.png']
+        ['/assets/vector/vector-art-sample-1.png', '/assets/vector/vector-art-sample-2.jpg'],
+        ['/assets/vector/vector-art-sample-3.png', '/assets/vector/vector-art-sample-4.png'],
+        ['/assets/vector/vector-art-sample-5.png', '/assets/vector/vector-art-sample-6.png'],
+        ['/assets/vector/vector-art-sample-7.png', '/assets/vector/vector-art-sample-8.png'],
+        ['/assets/vector/vector-art-sample-9.png', '/assets/vector/vector-art-sample-10.png'],
+        ['/assets/vector/vector-art-sample-11.png', '/assets/vector/vector-art-sample-12.png'],
+        ['/assets/vector/vector-art-sample-13.png', '/assets/vector/vector-art-sample-14.png']
     ]
     return (
         <div className='py-16 pb-24 bg-secondary'>

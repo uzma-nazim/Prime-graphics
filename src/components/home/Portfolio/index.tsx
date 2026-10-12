@@ -17,21 +17,21 @@ const kaushanScript = Kaushan_Script({ subsets: ["latin"], weight: ["400"] });
 
 function Portfolio() {
     // let data = [
-    //     '/assets/portfolio1.png',
-    //     '/assets/portfolio2.png',
-    //     '/assets/portfolio3.png',
-    //     '/assets/portfolio4.png',
-    //     '/assets/portfolio5.png',
-    //     '/assets/portfolio6.png',
+    //     '/assets/embroidery-digitizing-sample-1.png',
+    //     '/assets/embroidery-digitizing-sample-2.png',
+    //     '/assets/embroidery-digitizing-sample-3.png',
+    //     '/assets/embroidery-digitizing-sample-4.png',
+    //     '/assets/embroidery-digitizing-sample-5.png',
+    //     '/assets/embroidery-digitizing-sample-6.png',
     //     '/assets/portfolio7.jpg',
     //     '/assets/portfolio8.jpg',
     // ]
 
     let data = [
-        ['/assets/portfolio1.png', '/assets/portfolio2.png'],
-        ['/assets/portfolio3.png', '/assets/portfolio4.png'],
-        ['/assets/portfolio5.png', '/assets/portfolio6.png'],
-        ['/assets/portfolio7.png', '/assets/portfolio8.png']
+        ['/assets/embroidery-digitizing-sample-1.png', '/assets/embroidery-digitizing-sample-2.png'],
+        ['/assets/embroidery-digitizing-sample-3.png', '/assets/embroidery-digitizing-sample-4.png'],
+        ['/assets/embroidery-digitizing-sample-5.png', '/assets/embroidery-digitizing-sample-6.png'],
+        ['/assets/embroidery-digitizing-sample-7.png', '/assets/embroidery-digitizing-sample-8.png']
     ]
     return (
         <div className='relative py-14' id='gallery'>

@@ -5,22 +5,22 @@ import SocialLinks from '@/components/common/SocialLinks';
 import { EmbroideryPatch, EmbroideryPatches, LeatherPatch, LeatherPatches, PVCPatch, PVCPatches } from '@/components/embroideryPatch';
 import { BreadcrumbJsonLd, ServiceJsonLd } from '@/components/seo/JsonLd';
 import { patchHubFaqs } from '@/lib/patches';
+import { DEFAULT_OG_IMAGE, pageMetadata } from '@/lib/seo';
 
-const title = 'Custom Patches – Embroidered, PVC, Leather & Sublimation';
 const description =
-    'Order custom patches with your logo: embroidered, PVC, leather and sublimation patches for hats, uniforms, jackets, clubs and brands. Free design mock-up and quote. UK, USA & worldwide.';
+    'Order custom patches for hats, jackets, uniforms and brands: iron-on, Velcro or sew-on backing, any shape and size. Worldwide shipping. Get a free quote.';
 
-export const metadata: Metadata = {
-    title,
+export const metadata: Metadata = pageMetadata({
+    title: 'Custom Patches for Hats, Jackets & Brands',
     description,
-    alternates: { canonical: '/custom-patches' },
-    openGraph: { title, description, url: '/custom-patches', images: ['/assets/embroideryPatch/pvc/custom-pvc-patches.jpg'] },
-};
+    path: '/custom-patches',
+    imageAlt: 'Custom patches made by Prime Graphics',
+});
 
 function CustomPatches() {
     return (
         <div>
-            <ServiceJsonLd name='Custom Patches' description={description} path='/custom-patches' />
+            <ServiceJsonLd name='Custom Patches' description={description} path='/custom-patches' serviceType='Custom patches' image={DEFAULT_OG_IMAGE} />
             <BreadcrumbJsonLd items={[{ name: 'Home', path: '/' }, { name: 'Custom Patches', path: '/custom-patches' }]} />
 
             <EmbroideryPatch />
@@ -37,7 +37,14 @@ function CustomPatches() {
                         <p className='mt-5'>
                             For photos, gradients and designs with lots of colours, our full-colour sublimation patches print your artwork with
                             photo-quality detail and a smooth finish.{' '}
-                            <Link href='/custom-sublimation-patches' className='underline font-semibold text-secondary'>Learn about sublimation patches</Link>.
+                            <Link href='/custom-sublimation-patches' className='underline font-semibold text-secondary'>Learn about custom sublimation patches</Link>.
+                        </p>
+                        <p className='mt-5'>
+                            Every custom patch is made to your design, size and shape, for hats, jackets, uniforms and bags, with sew-on, iron-on,
+                            Velcro or adhesive backing and worldwide shipping. Read more about our{' '}
+                            <Link href='/custom-embroidered-patches' className='underline font-semibold text-secondary'>custom embroidered patches</Link>,{' '}
+                            <Link href='/custom-pvc-patches' className='underline font-semibold text-secondary'>custom PVC patches</Link> and{' '}
+                            <Link href='/custom-leather-patches' className='underline font-semibold text-secondary'>custom leather patches</Link>.
                         </p>
                         <div className='mt-10 flex flex-col items-center gap-3'>
                             <p className='font-semibold text-secondary'>See our latest patches on social media</p>

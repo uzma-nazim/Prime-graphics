@@ -11,12 +11,12 @@ export default function PatchLanding({ patch }: { patch: PatchType }) {
     const others = patchTypes.filter((p) => p.slug !== patch.slug);
     return (
         <div>
-            <ServiceJsonLd name={`Custom ${patch.name}`} description={patch.metaDescription} path={`/${patch.slug}`} />
+            <ServiceJsonLd name={`Custom ${patch.name}`} description={patch.metaDescription} path={`/${patch.slug}`} serviceType={`Custom ${patch.name.toLowerCase()}`} image={patch.ogImage} />
             <BreadcrumbJsonLd
                 items={[
                     { name: 'Home', path: '/' },
                     { name: 'Custom Patches', path: '/custom-patches' },
-                    { name: patch.name, path: `/${patch.slug}` },
+                    { name: `Custom ${patch.name}`, path: `/${patch.slug}` },
                 ]}
             />
 
@@ -40,7 +40,7 @@ export default function PatchLanding({ patch }: { patch: PatchType }) {
                         </div>
                         {patch.heroImage && (
                             <div className='w-full md:w-2/5 mt-10 md:mt-0 flex justify-center'>
-                                <Image src={patch.heroImage} width={500} height={500} priority className='w-[85%] h-auto rounded-xl' alt={patch.heroAlt} />
+                                <Image src={patch.heroImage} width={500} height={500} priority sizes='(min-width: 768px) 34vw, 77vw' className='w-[85%] h-auto rounded-xl' alt={patch.heroAlt} />
                             </div>
                         )}
                     </div>
@@ -74,7 +74,7 @@ export default function PatchLanding({ patch }: { patch: PatchType }) {
                         <div className='mt-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5'>
                             {patch.gallery.map((src, i) => (
                                 <div key={src} className='bg-white rounded-xl p-4 flex items-center justify-center aspect-square shadow-[0_4px_16px_rgba(0,0,0,0.06)]'>
-                                    <Image src={src} width={300} height={300} className='w-full h-full object-contain' alt={`${patch.galleryAlt} ${i + 1}`} />
+                                    <Image src={src} width={300} height={300} sizes='(min-width: 1024px) 22vw, (min-width: 640px) 30vw, 45vw' className='w-full h-full object-contain' alt={`${patch.galleryAlt} ${i + 1}`} />
                                 </div>
                             ))}
                         </div>
@@ -94,9 +94,10 @@ export default function PatchLanding({ patch }: { patch: PatchType }) {
                             ))}
                         </div>
                         <p className='mt-8 text-[#494747]'>
+                            Compare every type on our <Link href='/custom-patches' className='underline font-semibold text-secondary'>custom patches</Link> page.
                             Need the artwork prepared first? See our{' '}
-                            <Link href='/embroidery-digitizing' className='underline font-semibold text-secondary'>embroidery digitizing</Link> and{' '}
-                            <Link href='/vector-art-conversion' className='underline font-semibold text-secondary'>vector art</Link> services.
+                            <Link href='/embroidery-digitizing' className='underline font-semibold text-secondary'>embroidery digitizing services</Link> and{' '}
+                            <Link href='/vector-art-conversion' className='underline font-semibold text-secondary'>vector art services</Link>.
                         </p>
                         <div className='mt-8 flex flex-col items-center gap-3'>
                             <p className='font-semibold text-secondary'>See our latest patches on social media</p>

@@ -30,7 +30,7 @@ function Digitizing() {
                     <div className='block md:flex relative z-20'>
                         <div className='flex justify-center w-full md:w-1/2 md:border-r border-[#C5C2C1]'>
 
-                            <Image src={'/assets/services/digitize.png'} width={500} height={500} className='w-[70%] lg:w-[55%] object-contain' alt='Embroidery digitizing of a logo into a machine stitch file' />
+                            <Image src={'/assets/services/digitize.png'} width={500} height={500} priority sizes='(min-width: 1024px) 25vw, (min-width: 768px) 32vw, 63vw' className='w-[70%] lg:w-[55%] object-contain' alt='Embroidery digitizing of a logo into a machine stitch file' />
                         </div>
                         <div className='w-full md:w-1/2 md:pl-10 mt-10 md:mt-0'>
                             <h1 className='text-xl sm:text-2xl lg:text-3xl font-medium'>We provide the Best Digitizing.</h1>
@@ -40,7 +40,7 @@ function Digitizing() {
                                 <span className='w-[40px] h-[40px] flex justify-center items-center bg-dark-primary rounded-full'>
                                     <Check className='text-white' />
                                 </span>
-                                <h2 className='text-lg lg:text-[22px] font-semibold'>Best Approved Designs Embroidery</h2>
+                                <h3 className='text-lg lg:text-[22px] font-semibold'>Best Approved Designs Embroidery</h3>
                             </div>
                         </div>
                     </div>
